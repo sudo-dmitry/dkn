@@ -1,0 +1,185 @@
+.ticket {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__title {
+    font-size: 44px;
+    font-weight: 900;
+    margin-bottom: 50px;
+  }
+
+  .boarding {
+    display: flex;
+
+    &__big {
+      border: 2px solid #ffffff;
+      border-radius: 30px;
+      width: 68%;
+
+      &__header {
+        font-size: 30px;
+        font-weight: 500;
+        padding-left: 40px;
+        position: relative;
+        height: 90px;
+        line-height: 90px;
+
+        svg {
+          width: 40px;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+
+      &__form-area {
+        margin-bottom: 30px;
+        background-color: #ffffff;
+        color: $mainColor;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: flex;
+        height: 450px;
+        border-right: 2px dashed lightgrey;
+
+        img {
+          margin-left: 20px;
+        }
+
+        &__form {
+          margin-left: 35px;
+          margin-right: 50px;
+          width: 100%;
+
+          &__item {
+            padding: 20px 0;
+            width: 100%;
+            display: table;
+
+            &:first-child {
+              padding-top: 0;
+            }
+            &:last-child {
+              padding-bottom: 0;
+            }
+
+            label {
+              font-weight: 500;
+              display: table-cell;
+              width: 130px;
+            }
+
+            input {
+              font-size: 20px;
+              padding: 5px 10px;
+              border: 1px solid $mainColor;
+              border-radius: 10px;
+            }
+
+            .input {
+              display: table-cell;
+              width: 100%;
+            }
+
+            .plane1 {
+              width: 20px;
+              transform: rotate(-45deg);
+              margin-right: 10px;
+            }
+
+            .plane2 {
+              width: 20px;
+              transform: rotate(45deg);
+              margin-right: 10px;
+            }
+
+            .small {
+              width: 100px;
+              margin-right: 20px;
+            }
+
+            .submit {
+              cursor: pointer;
+              background-color: $mainColor;
+              color: #ffffff;
+              padding: 5px 20px;
+              transition: .3s;
+              border-radius: 5px;
+              float: right;
+              &:hover {
+                background-color: darken($mainColor, 5%);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &__small {
+      border: 2px solid #ffffff;
+      border-radius: 30px;
+      width: 32%;
+
+      &__header {
+        font-size: 14px;
+        height: 90px;
+        margin: 0 30px;
+        position: relative;
+
+        &__content {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+
+        img {
+          max-width: 90px;
+          padding-top: 5px;
+        }
+      }
+
+      &__form-area {
+        margin-bottom: 30px;
+        background-color: #ffffff;
+        color: $mainColor;
+        padding: 20px 30px;
+        font-weight: 500;
+        border-left: 2px dashed lightgrey;
+        height: 450px;
+
+        &__title {
+          padding-bottom: 10px;
+        }
+
+        &__form {
+
+          input {
+            font-size: 20px;
+            padding: 4.5px 10px;
+            border: 1px solid $mainColor;
+            border-radius: 10px;
+            width: 100%;
+            margin-bottom: 10px;
+          }
+        }
+
+        img {
+          width: 100%;
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+
+  ._pl {
+    padding-left: 80px;
+  }
+
+  .price {
+    margin-top: 30px;
+    font-weight: 900;
+  }
+}

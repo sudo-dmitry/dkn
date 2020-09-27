@@ -1,0 +1,15 @@
+.footer {
+  padding: 60px 0;
+  height: 500px;
+
+  &__inner {
+    display: flex;
+    padding-top: 100px;
+
+    img {
+      width: 300px;
+      margin-right: 50px;
+      margin-bottom: 100px;
+    }
+  }
+}
