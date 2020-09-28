@@ -162,7 +162,7 @@ a[role=button] {
 	.timeline__item {
 		position: relative;
 		width: 260px;
-		padding-left: 36px;
+		padding-left: 40px;
 		
 		@media (max-width: $screen-small) {
 			padding-left: 46px;
@@ -223,8 +223,12 @@ a[role=button] {
 		}
 	}
 	.timeline__circle {
-		margin-left: -46px;
+		margin-left: -40px;
 		padding-bottom: 4px;
+		
+		@media (max-width: $screen-small) {
+			margin-left: -46px;
+		}
 		
 		&:before {
 			content: '';
