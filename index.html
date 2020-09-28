@@ -526,6 +526,128 @@
     
 </section>
 
+
+
+    
+    
+<section class="schedule-new js-shedule-new">
+    
+    <div class="schedule-new__container">
+        <div class="schedule-new__header">
+            <h2>Расписание</h2>
+            <span>День 1</span>
+        </div>
+        <div class="schedule-new__items">
+            <div class="schedule-new__item">
+                <div class="schedule-new__item-title">Иван Сергеев</div>
+                <div class="schedule-new__item-time">23 сентября • 10:30</div>
+                <div class="schedule-new__item-description">
+                    Агент по продажам коммерческой недвижимости со стажем более 10 лет. Раскроет вам некоторые секреты успешных продаж крупных объектов.
+                </div>
+            </div>
+            <div class="schedule-new__item">
+                <div class="schedule-new__item-title">Михаил Андреев</div>
+                <div class="schedule-new__item-time">23 сентября • 12:30</div>
+                <div class="schedule-new__item-description">
+                    Заместитель генерального директора по международным бизнес-связям с партнерами агентства. Интересная история из жизни.
+                </div>
+            </div>
+            <div class="schedule-new__item">
+                <div class="schedule-new__item-title">Андей Иванов</div>
+                <div class="schedule-new__item-time">23 сентября • 14:30</div>
+                <div class="schedule-new__item-description">
+                    Исполнительный директор по вторичному рынку. Самые необычные сделки для агента, опыт продажи объектов недвижимости.
+                </div>
+            </div>
+            <div class="schedule-new__item">
+                <div class="schedule-new__item-title">Дмитрий Петров</div>
+                <div class="schedule-new__item-time">23 сентября • 16:30</div>
+                <div class="schedule-new__item-description">
+                    Бизнес-тренер по саморазвитию, расскажет как показать себя и наладить отношения с партнерами по бизнесу.
+                </div>
+            </div>
+        </div>
+        
+        <!-- Hidden content -->
+        <div class="schedule-new__collapsed">
+            <div class="schedule-new__items">
+                <div class="schedule-new__item">
+                    <div class="schedule-new__item-title">Иван Сергеев</div>
+                    <div class="schedule-new__item-time">23 сентября • 10:30</div>
+                    <div class="schedule-new__item-description">
+                        Агент по продажам коммерческой недвижимости со стажем более 10 лет. Раскроет вам некоторые секреты успешных продаж крупных объектов.
+                    </div>
+                </div>
+                <div class="schedule-new__item">
+                    <div class="schedule-new__item-title">Михаил Андреев</div>
+                    <div class="schedule-new__item-time">23 сентября • 12:30</div>
+                    <div class="schedule-new__item-description">
+                        Заместитель генерального директора по международным бизнес-связям с партнерами агентства. Интересная история из жизни.
+                    </div>
+                </div>
+                <div class="schedule-new__item">
+                    <div class="schedule-new__item-title">Андей Иванов</div>
+                    <div class="schedule-new__item-time">23 сентября • 14:30</div>
+                    <div class="schedule-new__item-description">
+                        Исполнительный директор по вторичному рынку. Самые необычные сделки для агента, опыт продажи объектов недвижимости.
+                    </div>
+                </div>
+                <div class="schedule-new__item">
+                    <div class="schedule-new__item-title">Дмитрий Петров</div>
+                    <div class="schedule-new__item-time">23 сентября • 16:30</div>
+                    <div class="schedule-new__item-description">
+                        Бизнес-тренер по саморазвитию, расскажет как показать себя и наладить отношения с партнерами по бизнесу.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="cut-plane schedule-new__cut-plane">
+        <div class="cut-plane__left"></div>
+        <div class="cut-plane__icon">
+            <a role="button" id="schedule-toggler">
+                <svg class="icon -plane -rotate-90">
+                    <use xlink:href="#icon-plane"></use>
+                </svg>
+            </a>
+        </div>
+        <div class="cut-plane__right"></div>
+    </div>
+    
+</section>
+
+<!-- Schedule expender script -->
+<script>
+    (function () {
+        
+        let schedule = document.querySelector('.schedule-new');
+        let scheduleCollapsed = document.querySelector('.schedule-new__collapsed');
+        let scheduleCollapsedHeight = 0;
+        let toggler = document.getElementById('schedule-toggler');
+        let isExpanded = false;
+        
+        // Check schedule collapsed part height
+        scheduleCollapsed.classList.add('check');
+        scheduleCollapsedHeight = scheduleCollapsed.clientHeight;
+        scheduleCollapsed.classList.remove('check');
+        
+        toggler.addEventListener('click', function () {
+            isExpanded = schedule.classList.contains('expanded');
+            if (isExpanded) {
+                schedule.classList.remove('expanded');
+                scheduleCollapsed.style.maxHeight = null;
+            } else {
+                schedule.classList.add('expanded');
+                scheduleCollapsed.style.maxHeight = scheduleCollapsedHeight + 'px';
+            }
+        })
+        
+    })();
+</script>
+
+
+
 <!-- Ticket -->
 
 <section class="ticket">

@@ -1,9 +1,40 @@
+// Colors
 $color-white: #fff;
 $color-blue: #0a70b9;
 
+// Screen breakpoints
+$screen-xsmall: 420px !default;				// <= 420
+$screen-small: 720px !default;				// <= 720
+$screen-medium: 1080px !default;			// <= 1080
+$screen-large: 1440px !default;				// <= 1440
+
+
+// Helpers
 
 a[role=button] {
 	cursor: pointer;
+}
+// .ml-auto {
+// 	margin-left: auto;
+// }
+
+
+// Adaptive mixins
+
+@mixin screen-xlarge {
+	@media (min-width: $screen-xlarge + 1) { @content; }
+}
+@mixin screen-large {
+	@media (max-width: $screen-large) { @content; }
+}
+@mixin screen-medium {
+	@media (max-width: $screen-medium) { @content; }
+}
+@mixin screen-small {
+	@media (max-width: $screen-small) { @content; }
+}
+@mixin screen-xsmall {
+	@media (max-width: $screen-xsmall) { @content; }
 }
 
 
@@ -82,5 +113,121 @@ a[role=button] {
 	}
 	50% {
 		top: 8px;
+	}
+}
+
+
+// Schedule new section
+
+.schedule-new {
+	padding: 200px 0;
+	background: #0a70b9;
+	color: #fff;
+	
+	.schedule-new__container {
+		max-width: 1400px;
+		margin: 0 auto;
+		padding: 0 4vw;
+	}
+	.schedule-new__header {
+		display: flex;
+		
+		h2,
+		span {
+			font-size: 1.8rem;
+			font-weight: 900;
+		}
+		
+		span {
+			margin-left: auto;
+			white-space: nowrap;
+		}
+		
+		@media (max-width: $screen-medium) {
+			
+			span {
+				font-size: 1.4rem;
+			}
+		}
+		
+		@media (max-width: $screen-small) {
+			flex-direction: column;
+			
+			span {
+				font-size: 1.2rem;
+			}
+			
+			span {
+				margin-left: 0;
+			}
+		}
+	}
+	.schedule-new__items {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -30px;
+		
+		@media (max-width: $screen-medium) {
+			margin: 0;
+		}
+	}
+	.schedule-new__item {
+		flex: 1 0 50%;
+		max-width: 50%;
+		margin-top: 60px;
+		padding: 0 30px;
+		
+		@media (max-width: $screen-medium) {
+			flex: 1 0 100%;
+			max-width: none;
+			padding: 0;
+		}
+	}
+	.schedule-new__item-title {
+		font-size: 1.8rem;
+		font-weight: 900;
+		line-height: 1.2;
+		
+		@media (max-width: $screen-medium) {
+			font-size: 1.4rem;
+		}
+		
+		@media (max-width: $screen-medium) {
+			font-size: 1.2rem;
+		}
+	}
+	.schedule-new__item-time {
+		line-height: 1.2;
+	}
+	.schedule-new__item-description {
+		margin-top: 25px;
+	}
+	.schedule-new__cut-plane {
+		margin-top: 60px;
+	}
+	
+	.schedule-new__collapsed {
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height .6s ease-out;
+		
+		&.check {
+			position: fixed;
+			z-index: -1;
+			top: 0;
+			left: 0;
+			max-height: none;
+			overflow: visible;
+			opacity: 0;
+		}
+	}
+	&.expanded {
+		
+		.schedule-new__cut-plane {
+			
+			.icon {
+				transform: rotate(-90deg);
+			}
+		}
 	}
 }
