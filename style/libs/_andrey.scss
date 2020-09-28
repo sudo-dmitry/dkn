@@ -57,6 +57,10 @@ a[role=button] {
 	max-width: 70vw;
 	margin-top: 20px;
 	
+	@media (max-width: $screen-small) {
+		max-width: 100%;
+	}
+	
 	p {
 		margin: 1rem 0;
 	}
