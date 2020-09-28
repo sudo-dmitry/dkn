@@ -38,6 +38,14 @@ a[role=button] {
 }
 
 
+// Globals
+.section-container {
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 0 4vw;
+}
+
+
 // SVG icons class
 .icon {
 	width: 16px;
@@ -124,11 +132,6 @@ a[role=button] {
 	background: #0a70b9;
 	color: #fff;
 	
-	.schedule-new__container {
-		max-width: 1400px;
-		margin: 0 auto;
-		padding: 0 4vw;
-	}
 	.schedule-new__header {
 		display: flex;
 		
