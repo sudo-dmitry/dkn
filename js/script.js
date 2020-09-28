@@ -76,39 +76,39 @@ $(document).ready(function(){
 // First Name
 
 $("#fname").keyup(function() {
-  update();
+  updateName();
 });
 
-function update() {
+function updateName() {
   $("#fname-small").val($('#fname').val());
 }
 
 // Last Name
 
 $("#lname").keyup(function() {
-  update();
+  updateLastName();
 });
 
-function update() {
+function updateLastName() {
   $("#lname-small").val($('#lname').val());
 }
 
 // Phone
 
 $("#tel").keyup(function() {
-  update();
+  updatePhone();
 });
 
-function update() {
+function updatePhone() {
   $("#tel-small").val($('#tel').val());
 }
 
 // Phone
 
 $("#email").keyup(function() {
-  update();
+  updateEmail();
 });
 
-function update() {
+function updateEmail() {
   $("#email-small").val($('#email').val());
 }
