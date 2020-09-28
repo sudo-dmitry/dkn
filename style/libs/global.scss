@@ -44,3 +44,29 @@ html, body {
     border-color: $mainColor;
   }
 }
+
+.icon {
+  width: 16px;
+  height: 16px;
+  vertical-align: sub;
+  fill: $colorWhite;
+
+  // Icons colors
+  &.-white {
+    fill: $colorWhite;
+  }
+  &.-blue {
+    fill: $mainColor;
+  }
+
+  // Icons sizes
+  &.-plane {
+    width: 40px;
+    height: 36px;
+  }
+
+  // Icons transforms
+  &.-rotate-90 {
+    transform: rotate(90deg);
+  }
+}

@@ -1,2 +1,8 @@
 $mainColor: #0A70B9;
 $colorWhite: #ffffff;
+
+// Screen breakpoints
+$screen-xsmall: 420px !default;				// <= 420
+$screen-small: 720px !default;				// <= 720
+$screen-medium: 1080px !default;			// <= 1080
+$screen-large: 1440px !default;				// <= 1440

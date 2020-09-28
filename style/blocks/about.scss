@@ -43,6 +43,113 @@
       width: 72%;
       padding-bottom: 80px;
     }
+
+    .timeline {
+      position: relative;
+      display: flex;
+      width: 100%;
+      padding: 100px 0 160px 0;
+
+      @media (max-width: $screen-small) {
+        flex-direction: column;
+        margin-left: 20px;
+      }
+
+      .timeline__item {
+        position: relative;
+        width: 260px;
+        padding-left: 40px;
+
+        @media (max-width: $screen-small) {
+          padding-left: 46px;
+        }
+
+        &:before {
+          content: '';
+          position: absolute;
+          z-index: -1;
+          top: 47px;
+          right: 0;
+          width: 1000px;
+          height: 3px;
+          background: $colorWhite;
+
+          @media (max-width: $screen-small) {
+            top: 0;
+            bottom: 0;
+            left: 14px;
+            right: auto;
+            width: 3px;
+            height: auto;
+          }
+        }
+
+        &.-plane {
+          width: auto;
+
+          &:before {
+            right: 10px;
+          }
+
+          .icon {
+            margin-top: 30px;
+          }
+
+          @media (max-width: $screen-small) {
+
+            &:before {
+              right: auto;
+              bottom: 10px;
+            }
+
+            .icon {
+              margin-left: -50px;
+              transform: rotate(90deg);
+            }
+          }
+        }
+      }
+      .timeline__year {
+        height: 32px;
+
+        @media (max-width: $screen-small) {
+          position: relative;
+          top: 32px;
+          font-weight: 700;
+        }
+      }
+      .timeline__circle {
+        margin-left: -40px;
+        padding-bottom: 4px;
+
+        @media (max-width: $screen-small) {
+          margin-left: -46px;
+        }
+
+        &:before {
+          content: '';
+          position: relative;
+          z-index: 1;
+          display: block;
+          width: 26px;
+          height: 26px;
+          border: solid 3px #fff;
+          border-radius: 100%;
+          background: $mainColor;
+        }
+
+        &.active:before {
+          background: $colorWhite;
+        }
+      }
+      .timeline__rent {
+
+      }
+      .timeline__sold {
+
+      }
+    }
+
   }
 
   &__plane {
