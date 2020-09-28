@@ -10,6 +10,23 @@
     <title>Бизнес-тур в «Бизнес класс» | Аякс</title>
 </head>
 <body id="home" data-spy="scroll" data-target="#main-nav">
+    
+<!-- SVG icons  -->
+<div id="svgicons">
+    <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+        <symbol id="icon-plane" viewBox="0 0 576 512">
+            <path d="M480 192H365.71L260.61 8.06A16.014 16.014 0 0 0 246.71 0h-65.5c-10.63 0-18.3 10.17-15.38 20.39L214.86 192H112l-43.2-57.6c-3.02-4.03-7.77-6.4-12.8-6.4H16.01C5.6 128-2.04 137.78.49 147.88L32 256 .49 364.12C-2.04 374.22 5.6 384 16.01 384H56c5.04 0 9.78-2.37 12.8-6.4L112 320h102.86l-49.03 171.6c-2.92 10.22 4.75 20.4 15.38 20.4h65.5c5.74 0 11.04-3.08 13.89-8.06L365.71 320H480c35.35 0 96-28.65 96-64s-60.65-64-96-64z"></path>
+        </symbol>
+    </svg>
+</div>
+
+<!--
+    <svg class="icon -plane -white">
+        <use xlink:href="#icon-plane"></use>
+    </svg>
+-->
+
+
 
 <!-- Navbar -->
 
@@ -302,8 +319,23 @@
         </div>
     </div>
     <div class="speakers__plane">
-        <a href="javascript:void(0);" id="load-speakers"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plane" class="svg-inline--fa fa-plane fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M480 192H365.71L260.61 8.06A16.014 16.014 0 0 0 246.71 0h-65.5c-10.63 0-18.3 10.17-15.38 20.39L214.86 192H112l-43.2-57.6c-3.02-4.03-7.77-6.4-12.8-6.4H16.01C5.6 128-2.04 137.78.49 147.88L32 256 .49 364.12C-2.04 374.22 5.6 384 16.01 384H56c5.04 0 9.78-2.37 12.8-6.4L112 320h102.86l-49.03 171.6c-2.92 10.22 4.75 20.4 15.38 20.4h65.5c5.74 0 11.04-3.08 13.89-8.06L365.71 320H480c35.35 0 96-28.65 96-64s-60.65-64-96-64z"></path></svg></a>
+        <a href="javascript:void(0);" id="load-speakers_OFF"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plane" class="svg-inline--fa fa-plane fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M480 192H365.71L260.61 8.06A16.014 16.014 0 0 0 246.71 0h-65.5c-10.63 0-18.3 10.17-15.38 20.39L214.86 192H112l-43.2-57.6c-3.02-4.03-7.77-6.4-12.8-6.4H16.01C5.6 128-2.04 137.78.49 147.88L32 256 .49 364.12C-2.04 374.22 5.6 384 16.01 384H56c5.04 0 9.78-2.37 12.8-6.4L112 320h102.86l-49.03 171.6c-2.92 10.22 4.75 20.4 15.38 20.4h65.5c5.74 0 11.04-3.08 13.89-8.06L365.71 320H480c35.35 0 96-28.65 96-64s-60.65-64-96-64z"></path></svg></a>
     </div>
+    
+    
+    <br/>
+    <div class="cut-plane -blue">
+        <div class="cut-plane__left"></div>
+        <div class="cut-plane__icon">
+            <a role="button" id="load-speakers">
+                <svg class="icon -plane -rotate-90">
+                    <use xlink:href="#icon-plane"></use>
+                </svg>
+            </a>
+        </div>
+        <div class="cut-plane__right"></div>
+    </div>
+    
 </section>
 
 <!-- Schedule -->
@@ -474,9 +506,147 @@
         </div>
     </div>
     <div class="schedule__plane">
-        <a href="" id="load-schedule"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plane" class="svg-inline--fa fa-plane fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M480 192H365.71L260.61 8.06A16.014 16.014 0 0 0 246.71 0h-65.5c-10.63 0-18.3 10.17-15.38 20.39L214.86 192H112l-43.2-57.6c-3.02-4.03-7.77-6.4-12.8-6.4H16.01C5.6 128-2.04 137.78.49 147.88L32 256 .49 364.12C-2.04 374.22 5.6 384 16.01 384H56c5.04 0 9.78-2.37 12.8-6.4L112 320h102.86l-49.03 171.6c-2.92 10.22 4.75 20.4 15.38 20.4h65.5c5.74 0 11.04-3.08 13.89-8.06L365.71 320H480c35.35 0 96-28.65 96-64s-60.65-64-96-64z"></path></svg></a>
+        <a href="" id="load-schedule_OFF"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plane" class="svg-inline--fa fa-plane fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M480 192H365.71L260.61 8.06A16.014 16.014 0 0 0 246.71 0h-65.5c-10.63 0-18.3 10.17-15.38 20.39L214.86 192H112l-43.2-57.6c-3.02-4.03-7.77-6.4-12.8-6.4H16.01C5.6 128-2.04 137.78.49 147.88L32 256 .49 364.12C-2.04 374.22 5.6 384 16.01 384H56c5.04 0 9.78-2.37 12.8-6.4L112 320h102.86l-49.03 171.6c-2.92 10.22 4.75 20.4 15.38 20.4h65.5c5.74 0 11.04-3.08 13.89-8.06L365.71 320H480c35.35 0 96-28.65 96-64s-60.65-64-96-64z"></path></svg></a>
     </div>
+    
+    
+    <br/>
+    <div class="cut-plane">
+        <div class="cut-plane__left"></div>
+        <div class="cut-plane__icon">
+            <a role="button" id="load-schedule">
+                <svg class="icon -plane -rotate-90">
+                    <use xlink:href="#icon-plane"></use>
+                </svg>
+            </a>
+        </div>
+        <div class="cut-plane__right"></div>
+    </div>
+    
+    
 </section>
+
+
+
+    
+    
+<section class="schedule-new js-shedule-new">
+    
+    <div class="schedule-new__container">
+        <div class="schedule-new__header">
+            <h2>Расписание</h2>
+            <span>День 1</span>
+        </div>
+        <div class="schedule-new__items">
+            <div class="schedule-new__item">
+                <div class="schedule-new__item-title">Иван Сергеев</div>
+                <div class="schedule-new__item-time">23 сентября • 10:30</div>
+                <div class="schedule-new__item-description">
+                    Агент по продажам коммерческой недвижимости со стажем более 10 лет. Раскроет вам некоторые секреты успешных продаж крупных объектов.
+                </div>
+            </div>
+            <div class="schedule-new__item">
+                <div class="schedule-new__item-title">Михаил Андреев</div>
+                <div class="schedule-new__item-time">23 сентября • 12:30</div>
+                <div class="schedule-new__item-description">
+                    Заместитель генерального директора по международным бизнес-связям с партнерами агентства. Интересная история из жизни.
+                </div>
+            </div>
+            <div class="schedule-new__item">
+                <div class="schedule-new__item-title">Андей Иванов</div>
+                <div class="schedule-new__item-time">23 сентября • 14:30</div>
+                <div class="schedule-new__item-description">
+                    Исполнительный директор по вторичному рынку. Самые необычные сделки для агента, опыт продажи объектов недвижимости.
+                </div>
+            </div>
+            <div class="schedule-new__item">
+                <div class="schedule-new__item-title">Дмитрий Петров</div>
+                <div class="schedule-new__item-time">23 сентября • 16:30</div>
+                <div class="schedule-new__item-description">
+                    Бизнес-тренер по саморазвитию, расскажет как показать себя и наладить отношения с партнерами по бизнесу.
+                </div>
+            </div>
+        </div>
+        
+        <!-- Hidden content -->
+        <div class="schedule-new__collapsed">
+            <div class="schedule-new__items">
+                <div class="schedule-new__item">
+                    <div class="schedule-new__item-title">Иван Сергеев</div>
+                    <div class="schedule-new__item-time">23 сентября • 10:30</div>
+                    <div class="schedule-new__item-description">
+                        Агент по продажам коммерческой недвижимости со стажем более 10 лет. Раскроет вам некоторые секреты успешных продаж крупных объектов.
+                    </div>
+                </div>
+                <div class="schedule-new__item">
+                    <div class="schedule-new__item-title">Михаил Андреев</div>
+                    <div class="schedule-new__item-time">23 сентября • 12:30</div>
+                    <div class="schedule-new__item-description">
+                        Заместитель генерального директора по международным бизнес-связям с партнерами агентства. Интересная история из жизни.
+                    </div>
+                </div>
+                <div class="schedule-new__item">
+                    <div class="schedule-new__item-title">Андей Иванов</div>
+                    <div class="schedule-new__item-time">23 сентября • 14:30</div>
+                    <div class="schedule-new__item-description">
+                        Исполнительный директор по вторичному рынку. Самые необычные сделки для агента, опыт продажи объектов недвижимости.
+                    </div>
+                </div>
+                <div class="schedule-new__item">
+                    <div class="schedule-new__item-title">Дмитрий Петров</div>
+                    <div class="schedule-new__item-time">23 сентября • 16:30</div>
+                    <div class="schedule-new__item-description">
+                        Бизнес-тренер по саморазвитию, расскажет как показать себя и наладить отношения с партнерами по бизнесу.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="cut-plane schedule-new__cut-plane">
+        <div class="cut-plane__left"></div>
+        <div class="cut-plane__icon">
+            <a role="button" id="schedule-toggler">
+                <svg class="icon -plane -rotate-90">
+                    <use xlink:href="#icon-plane"></use>
+                </svg>
+            </a>
+        </div>
+        <div class="cut-plane__right"></div>
+    </div>
+    
+</section>
+
+<!-- Schedule expender script -->
+<script>
+    (function () {
+        
+        let schedule = document.querySelector('.schedule-new');
+        let scheduleCollapsed = document.querySelector('.schedule-new__collapsed');
+        let scheduleCollapsedHeight = 0;
+        let toggler = document.getElementById('schedule-toggler');
+        let isExpanded = false;
+        
+        // Check schedule collapsed part height
+        scheduleCollapsed.classList.add('check');
+        scheduleCollapsedHeight = scheduleCollapsed.clientHeight;
+        scheduleCollapsed.classList.remove('check');
+        
+        toggler.addEventListener('click', function () {
+            isExpanded = schedule.classList.contains('expanded');
+            if (isExpanded) {
+                schedule.classList.remove('expanded');
+                scheduleCollapsed.style.maxHeight = null;
+            } else {
+                schedule.classList.add('expanded');
+                scheduleCollapsed.style.maxHeight = scheduleCollapsedHeight + 'px';
+            }
+        })
+        
+    })();
+</script>
+
+
 
 <!-- Ticket -->
 
