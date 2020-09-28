@@ -1,15 +1,46 @@
 .footer {
-  padding: 60px 0;
-  height: 500px;
+  padding: 80px 0;
 
-  &__inner {
+  &__title {
+    font-size: 2.2rem;
+    font-weight: 900;
+  }
+
+  &__address {
+    padding: 40px 0;
+  }
+
+  &__bottom {
+    padding-top: 60px;
     display: flex;
-    padding-top: 100px;
+    justify-content: space-between;
 
-    img {
-      width: 300px;
-      margin-right: 50px;
-      margin-bottom: 100px;
+    &__left {
+      display: flex;
+      width: 45%;
+      justify-content: space-between;
+
+      &>div {
+        margin: auto 0;
+      }
+
+      img {
+        width: 150px;
+      }
+    }
+
+    &_right {
+      display: flex;
+      width: 100px;
+      justify-content: space-between;
+      margin: auto;
+      line-height: 2.8;
+
+      a {
+        width: 40px;
+        height: 40px;
+        color: $colorWhite;
+      }
     }
   }
 }
