@@ -1,68 +1,177 @@
-.schedule {
-  padding-top: 60px;
-  padding-bottom: 60px;
+//.schedule {
+//  padding-top: 60px;
+//  padding-bottom: 60px;
+//
+//  &__items {
+//    display: none;
+//
+//    &__title {
+//      font-size: 44px;
+//      font-weight: 900;
+//      margin-bottom: 50px;
+//      display: flex;
+//      justify-content: space-between;
+//
+//      &._end {
+//        justify-content: flex-end;
+//      }
+//
+//      &__left {
+//        &._none {
+//          display: none;
+//        }
+//      }
+//    }
+//
+//    &__inner {
+//      display: flex;
+//    }
+//  }
+//
+//  &__item {
+//    padding-right: 100px;
+//    padding-bottom: 60px;
+//
+//    &__title {
+//      font-size: 40px;
+//      font-weight: 900;
+//    }
+//
+//    &__time {
+//      font-weight: 500;
+//      padding-bottom: 20px;
+//    }
+//  }
+//
+//  &__plane {
+//    text-align: center;
+//    position: relative;
+//    width: 100%;
+//    &:before {
+//      content: '';
+//      display: block;
+//      position: absolute;
+//      width: 100%;
+//      border-bottom: 2px dotted #ffffff;
+//      top: 37%;
+//    }
+//
+//    a {
+//      color: #ffffff;
+//    }
+//
+//    svg {
+//      width: 40px;
+//      transform: rotate(90deg);
+//    }
+//  }
+//}
 
-  &__items {
-    display: none;
 
-    &__title {
-      font-size: 44px;
+
+// Schedule new section
+
+.schedule-new {
+  padding: 200px 0;
+  background: $mainColor;
+  color: $colorWhite;
+
+  .schedule-new__header {
+    display: flex;
+
+    span {
+      margin-left: auto;
+      white-space: nowrap;
+      font-size: 1.8rem;
       font-weight: 900;
-      margin-bottom: 50px;
-      display: flex;
-      justify-content: space-between;
+    }
 
-      &._end {
-        justify-content: flex-end;
-      }
+    @media (max-width: $screen-medium) {
 
-      &__left {
-        &._none {
-          display: none;
-        }
+      span {
+        font-size: 1.4rem;
       }
     }
 
-    &__inner {
-      display: flex;
+    @media (max-width: $screen-small) {
+      flex-direction: column;
+
+      span {
+        margin-left: 0;
+        font-size: 1.2rem;
+      }
     }
   }
+  .schedule-new__items {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -30px;
 
-  &__item {
-    padding-right: 100px;
-    padding-bottom: 60px;
-
-    &__title {
-      font-size: 40px;
-      font-weight: 900;
-    }
-
-    &__time {
-      font-weight: 500;
-      padding-bottom: 20px;
+    @media (max-width: $screen-medium) {
+      margin: 0;
     }
   }
+  .schedule-new__item {
+    flex: 1 0 50%;
+    max-width: 50%;
+    margin-top: 60px;
+    padding: 0 30px;
 
-  &__plane {
-    text-align: center;
-    position: relative;
-    width: 100%;
-    &:before {
-      content: '';
-      display: block;
-      position: absolute;
-      width: 100%;
-      border-bottom: 2px dotted #ffffff;
-      top: 37%;
+    @media (max-width: $screen-medium) {
+      flex: 1 0 100%;
+      max-width: none;
+      padding: 0;
+    }
+  }
+  .schedule-new__item-title {
+    font-size: 1.8rem;
+    font-weight: 900;
+    line-height: 1.2;
+
+    @media (max-width: $screen-medium) {
+      font-size: 1.4rem;
     }
 
-    a {
-      color: #ffffff;
+    @media (max-width: $screen-medium) {
+      font-size: 1.2rem;
+    }
+  }
+  .schedule-new__item-time {
+    line-height: 1.2;
+  }
+  .schedule-new__item-description {
+    margin-top: 25px;
+  }
+  .schedule-new__cut-plane {
+    margin-top: 60px;
+  }
+
+  .schedule-new__collapsed {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .4s ease-out;
+
+    &.check {
+      position: fixed;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      max-height: none;
+      overflow: visible;
+      opacity: 0;
     }
 
-    svg {
-      width: 40px;
-      transform: rotate(90deg);
+    .schedule-new__header {
+      margin-top: 60px;
+    }
+  }
+  &.expanded {
+
+    .schedule-new__cut-plane {
+
+      .icon {
+        transform: rotate(-90deg);
+      }
     }
   }
 }

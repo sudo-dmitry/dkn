@@ -70,3 +70,56 @@ html, body {
     transform: rotate(90deg);
   }
 }
+
+
+
+// Cut line with plane
+
+.cut-plane {
+  display: flex;
+  align-items: center;
+
+  .cut-plane__left,
+  .cut-plane__right {
+    flex: 1;
+    height: 3px;
+    background-repeat: repeat-x;
+    background-position: right center;
+    background-size: auto 3px;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAGCAYAAAAlvnXZAAAAYUlEQVR4AaXMNRICURQF0Te4rYccJ2chbBYPcUiQaOzfhhDXU9Vp2yNBHHeApcT+Ok1CKNs7QBoIeELQBzx7JYqo8l7uzSRq/z3ZbrclnfGEpBng2Tuhc10g4t4ximjZjRNWatO63JOyIgAAAABJRU5ErkJggg==')
+  }
+  .cut-plane__right {
+    background-position: left center;
+  }
+  .cut-plane__icon {
+    flex: 0;
+    position: relative;
+    top: 4px;
+    padding: 0 16px;
+    text-align: center;
+    animation: animate-down 1.2s ease-out infinite;
+  }
+
+  &.-blue {
+
+    .cut-plane__left,
+    .cut-plane__right {
+      background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAGCAYAAAAlvnXZAAAAZElEQVR4AWPACnJ2BzPk7XnGkL/nAzIGit1iKNxhxkAQpJ1hBSr+CcT/seL8vVcZGP4z4jckZ68TSDFe3LCfA68ZQEUelBuStZ8HqPAfHkMew7xDyDX5QPwbiwGfGHL2uaMrBwBvam319VXtdQAAAABJRU5ErkJggg==')
+    }
+    .cut-plane__icon {
+
+      .icon {
+        fill: $mainColor;
+      }
+    }
+  }
+}
+
+@keyframes animate-down {
+  0%, 100% {
+    top: 2px;
+  }
+  50% {
+    top: 8px;
+  }
+}
