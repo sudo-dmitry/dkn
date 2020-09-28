@@ -209,7 +209,7 @@ a[role=button] {
 	.schedule-new__collapsed {
 		max-height: 0;
 		overflow: hidden;
-		transition: max-height .6s ease-out;
+		transition: max-height .4s ease-out;
 		
 		&.check {
 			position: fixed;

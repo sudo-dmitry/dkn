@@ -31,9 +31,9 @@
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "/index.html",
-		"oF": 1
+		"oF": 0
 		},
 	"/jquery-3.5.1.min.js": {
 		"bF": 0,
