@@ -68,3 +68,47 @@ $(document).ready(function(){
     }, 500);
   });
 });
+
+
+
+// Sync inputs
+
+// First Name
+
+$("#fname").keyup(function() {
+  update();
+});
+
+function update() {
+  $("#fname-small").val($('#fname').val());
+}
+
+// Last Name
+
+$("#lname").keyup(function() {
+  update();
+});
+
+function update() {
+  $("#lname-small").val($('#lname').val());
+}
+
+// Phone
+
+$("#tel").keyup(function() {
+  update();
+});
+
+function update() {
+  $("#tel-small").val($('#tel').val());
+}
+
+// Phone
+
+$("#email").keyup(function() {
+  update();
+});
+
+function update() {
+  $("#email-small").val($('#email').val());
+}
