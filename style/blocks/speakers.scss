@@ -63,8 +63,7 @@
 //}
 
 .speakers-new {
-  padding-top: 200px;
-  padding-bottom: 100px;
+  padding: 100px 0;
   background: $colorWhite;
   color: $colorBlack;
 
@@ -75,6 +74,11 @@
     @media (max-width: $screen-small) {
       flex-direction: column;
 
+    }
+
+    h2 {
+      font-size: 2rem;
+      font-weight: 900;
     }
   }
   .speakers-new__items {

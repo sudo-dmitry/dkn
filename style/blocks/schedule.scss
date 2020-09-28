@@ -72,7 +72,7 @@
 // Schedule new section
 
 .schedule-new {
-  padding: 200px 0;
+  padding: 100px 0;
   background: $mainColor;
   color: $colorWhite;
 
@@ -100,6 +100,11 @@
         margin-left: 0;
         font-size: 1.2rem;
       }
+    }
+
+    h2 {
+      font-size: 2rem;
+      font-weight: 900;
     }
   }
   .schedule-new__items {

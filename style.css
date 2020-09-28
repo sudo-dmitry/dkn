@@ -212,7 +212,7 @@ html, body {
   padding-bottom: 20px;
   background-color: rgba(10, 112, 185, 0.95);
   z-index: 10;
-  font-size: 20px; }
+  font-size: 1rem; }
   .header .main-nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -244,17 +244,17 @@ html, body {
 .showcase {
   padding-top: 200px; }
   .showcase__title {
-    font-size: 90px;
+    font-size: 3.8rem;
     font-weight: 900;
     line-height: 1.2; }
   .showcase__desc {
-    font-size: 40px;
+    font-size: 1.7rem;
     font-weight: bold;
     padding: 30px 0 90px 0; }
   .showcase__trip {
-    font-size: 40px; }
+    font-size: 1.7rem; }
   .showcase__date {
-    font-size: 40px; }
+    font-size: 1.7rem; }
   .showcase__plane {
     -webkit-box-sizing: content-box;
             box-sizing: content-box;
@@ -295,9 +295,9 @@ html, body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding-bottom: 50px; }
+    padding-bottom: 100px; }
     .about__area-one__text {
-      font-size: 44px;
+      font-size: 2rem;
       font-weight: 900;
       width: 50%;
       padding-right: 100px; }
@@ -314,7 +314,7 @@ html, body {
   .about__area-two {
     padding-top: 100px; }
     .about__area-two__title {
-      font-size: 44px;
+      font-size: 2rem;
       font-weight: 900;
       margin-bottom: 30px; }
     .about__area-two__text {
@@ -416,8 +416,7 @@ html, body {
       right: 3%; }
 
 .speakers-new {
-  padding-top: 200px;
-  padding-bottom: 100px;
+  padding: 100px 0;
   background: #ffffff;
   color: #000000; }
   .speakers-new .speakers-new__header {
@@ -431,6 +430,9 @@ html, body {
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column; } }
+    .speakers-new .speakers-new__header h2 {
+      font-size: 2rem;
+      font-weight: 900; }
   .speakers-new .speakers-new__items {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -492,7 +494,7 @@ html, body {
             transform: rotate(-90deg); }
 
 .schedule-new {
-  padding: 200px 0;
+  padding: 100px 0;
   background: #0A70B9;
   color: #ffffff; }
   .schedule-new .schedule-new__header {
@@ -516,6 +518,9 @@ html, body {
         .schedule-new .schedule-new__header span {
           margin-left: 0;
           font-size: 1.2rem; } }
+    .schedule-new .schedule-new__header h2 {
+      font-size: 2rem;
+      font-weight: 900; }
   .schedule-new .schedule-new__items {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -576,10 +581,10 @@ html, body {
             transform: rotate(-90deg); }
 
 .ticket {
-  padding-top: 60px;
+  padding-top: 100px;
   padding-bottom: 150px; }
   .ticket__title {
-    font-size: 44px;
+    font-size: 2rem;
     font-weight: 900;
     margin-bottom: 50px; }
   .ticket .boarding {
@@ -758,7 +763,7 @@ html, body {
 .footer {
   padding: 80px 0; }
   .footer__title {
-    font-size: 2.2rem;
+    font-size: 2rem;
     font-weight: 900; }
   .footer__address {
     padding: 40px 0; }
