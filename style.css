@@ -612,7 +612,7 @@ html, body {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        height: 450px;
+        height: 470px;
         border-right: 2px dashed lightgrey; }
         .ticket .boarding__big__form-area img {
           margin-left: 20px; }
@@ -621,30 +621,35 @@ html, body {
           margin-right: 50px;
           width: 100%; }
           .ticket .boarding__big__form-area__form__item {
-            padding: 20px 0;
+            padding: 18px 0;
             width: 100%;
-            display: table; }
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex; }
             .ticket .boarding__big__form-area__form__item:first-child {
               padding-top: 0; }
-            .ticket .boarding__big__form-area__form__item:last-child {
-              padding-bottom: 0; }
+            .ticket .boarding__big__form-area__form__item._date {
+              padding-bottom: 0;
+              -webkit-box-pack: justify;
+                  -ms-flex-pack: justify;
+                      justify-content: space-between; }
             .ticket .boarding__big__form-area__form__item label {
               font-weight: 500;
-              display: table-cell;
-              width: 130px; }
+              width: 130px;
+              margin-right: 20px; }
             .ticket .boarding__big__form-area__form__item input {
               font-size: 20px;
               padding: 5px 10px;
               border: 1px solid #0A70B9;
               border-radius: 10px; }
             .ticket .boarding__big__form-area__form__item .input {
-              display: table-cell;
               width: 100%; }
             .ticket .boarding__big__form-area__form__item .plane1 {
               width: 20px;
               -webkit-transform: rotate(-45deg);
                       transform: rotate(-45deg);
-              margin-right: 10px; }
+              margin-right: 10px;
+              margin-left: -20px; }
             .ticket .boarding__big__form-area__form__item .plane2 {
               width: 20px;
               -webkit-transform: rotate(45deg);
@@ -660,10 +665,24 @@ html, body {
               padding: 5px 20px;
               -webkit-transition: .3s;
               transition: .3s;
-              border-radius: 5px;
-              float: right; }
+              border-radius: 5px; }
               .ticket .boarding__big__form-area__form__item .submit:hover {
                 background-color: #0961a1; }
+          .ticket .boarding__big__form-area__form .confidential {
+            margin-top: 10px;
+            font-size: 14px;
+            text-align: end; }
+            .ticket .boarding__big__form-area__form .confidential a {
+              color: #000000; }
+            .ticket .boarding__big__form-area__form .confidential #checkbox {
+              -webkit-appearance: none;
+              width: 20px;
+              height: 20px;
+              background: white;
+              border-radius: 5px;
+              border: 1px solid #0A70B9; }
+              .ticket .boarding__big__form-area__form .confidential #checkbox:checked {
+                background-image: url("img/check-solid.svg"); }
     .ticket .boarding__small {
       border: 2px solid #ffffff;
       border-radius: 30px;
@@ -695,7 +714,7 @@ html, body {
         padding: 20px 30px;
         font-weight: 500;
         border-left: 2px dashed lightgrey;
-        height: 450px; }
+        height: 470px; }
         .ticket .boarding__small__form-area__title {
           padding-bottom: 10px; }
         .ticket .boarding__small__form-area__form input {
@@ -704,7 +723,7 @@ html, body {
           border: 1px solid #0A70B9;
           border-radius: 10px;
           width: 100%;
-          margin-bottom: 10px; }
+          margin-bottom: 8px; }
         .ticket .boarding__small__form-area img {
           width: 100%;
           margin-top: 15px; }
