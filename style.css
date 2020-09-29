@@ -722,7 +722,7 @@ html, body {
                     flex-direction: column;
             border-right: none;
             font-size: .9rem;
-            height: 660px; } }
+            height: 670px; } }
         @media (max-width: 720px) {
           .ticket .boarding__big__form-area {
             font-size: .8rem; } }
