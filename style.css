@@ -821,6 +821,7 @@ html, body {
   .burger #menuToggle {
     display: block;
     position: relative;
+    width: 35px;
     top: -30px;
     left: 20px;
     z-index: 1;
