@@ -9,10 +9,18 @@
   z-index: 10;
   font-size: 1rem;
 
+  @media (max-width: $screen-small) {
+    height: 100px;
+  }
+
   .main-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: $screen-small) {
+      justify-content: flex-end;
+    }
 
     &__logo {
       display: block;
@@ -25,6 +33,10 @@
 
     &__items {
       display: flex;
+
+      @media (max-width: $screen-small) {
+        display: none;
+      }
     }
 
     &__item {
