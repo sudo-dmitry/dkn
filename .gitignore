@@ -1,1 +1,12 @@
-.idea/
+# Codekit
+config.codekit3
+
+# osx noise
+.DS_Store
+profile
+
+# webstorm noise
+.idea
+
+# sass noise
+.sass-cache
