@@ -261,6 +261,9 @@ a[role=button] {
 	padding: 200px 0;
 	background: $color-blue;
 	color: $color-white;
+	@media (max-width: $screen-small) {
+		padding-bottom: 100px;
+	}
 	
 	.schedule-new__header {
 		display: flex;
