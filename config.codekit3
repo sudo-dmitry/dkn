@@ -35,21 +35,36 @@
 		"oAP": "/build/img",
 		"oF": 0
 		},
-	"/jquery-3.5.1.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/jquery-3.5.1.min-min.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 0
+	"/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/index.html",
+		"oF": 0
 		},
 	"/js": {
 		"ft": 65536,
 		"oA": 1,
 		"oAP": "/build/js",
+		"oF": 0
+		},
+	"/style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/style-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/style.css.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/style.css.map",
 		"oF": 0
 		},
 	"/style/blocks/about.scss": {
