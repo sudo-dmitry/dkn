@@ -638,6 +638,9 @@ html, body {
 .ticket {
   padding-top: 100px;
   padding-bottom: 150px; }
+  @media (max-width: 720px) {
+    .ticket {
+      padding-bottom: 120px; } }
   .ticket__title {
     font-size: 2rem;
     font-weight: 900;
@@ -650,6 +653,9 @@ html, body {
       border: 2px solid #ffffff;
       border-radius: 30px;
       width: 68%; }
+      @media (max-width: 720px) {
+        .ticket .boarding__big {
+          display: none; } }
       .ticket .boarding__big__header {
         font-size: 30px;
         font-weight: 500;
@@ -747,11 +753,17 @@ html, body {
       border: 2px solid #ffffff;
       border-radius: 30px;
       width: 32%; }
+      @media (max-width: 720px) {
+        .ticket .boarding__small {
+          width: 100%; } }
       .ticket .boarding__small__header {
         font-size: 14px;
         height: 90px;
         margin: 0 30px;
         position: relative; }
+        @media (max-width: 720px) {
+          .ticket .boarding__small__header {
+            margin: 0 20px; } }
         .ticket .boarding__small__header__content {
           display: -webkit-box;
           display: -ms-flexbox;
@@ -775,8 +787,15 @@ html, body {
         font-weight: 500;
         border-left: 2px dashed lightgrey;
         height: 480px; }
+        @media (max-width: 720px) {
+          .ticket .boarding__small__form-area {
+            border-left: none;
+            padding: 20px 20px; } }
         .ticket .boarding__small__form-area__title {
           padding-bottom: 10px; }
+          @media (max-width: 720px) {
+            .ticket .boarding__small__form-area__title {
+              font-size: .9rem; } }
         .ticket .boarding__small__form-area__form input {
           font-size: 20px;
           padding: 4.5px 10px;
@@ -784,9 +803,27 @@ html, body {
           border-radius: 10px;
           width: 100%;
           margin-bottom: 8px; }
+        .ticket .boarding__small__form-area__form .submit {
+          display: none;
+          cursor: pointer;
+          background-color: #0A70B9;
+          color: #ffffff;
+          padding: 5px 20px;
+          -webkit-transition: .3s;
+          transition: .3s;
+          border-radius: 5px; }
+          .ticket .boarding__small__form-area__form .submit:hover {
+            background-color: #0961a1; }
+          @media (max-width: 720px) {
+            .ticket .boarding__small__form-area__form .submit {
+              display: inherit;
+              margin-top: 10px; } }
         .ticket .boarding__small__form-area img {
           width: 100%;
           margin-top: 15px; }
+          @media (max-width: 720px) {
+            .ticket .boarding__small__form-area img {
+              margin-top: -15px; } }
   .ticket ._pl {
     padding-left: 80px; }
   .ticket .price {
@@ -808,6 +845,9 @@ html, body {
     z-index: 2;
     background-color: rgba(10, 112, 185, 0.3);
     pointer-events: none; }
+  @media (max-width: 720px) {
+    .map {
+      padding-bottom: 70%; } }
   .map iframe {
     position: absolute;
     top: 0;
@@ -830,6 +870,16 @@ html, body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
+    @media (max-width: 720px) {
+      .footer__bottom {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; } }
+    @media (max-width: 720px) {
+      .footer__bottom__name {
+        font-size: .8rem;
+        text-align: end; } }
     .footer__bottom__left {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -838,6 +888,10 @@ html, body {
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between; }
+      @media (max-width: 720px) {
+        .footer__bottom__left {
+          width: 100%;
+          margin-bottom: 20px; } }
       .footer__bottom__left > div {
         margin: auto 0; }
       .footer__bottom__left img {
@@ -852,6 +906,9 @@ html, body {
               justify-content: space-between;
       margin: auto;
       line-height: 2.8; }
+      @media (max-width: 720px) {
+        .footer__bottom_right {
+          margin: inherit; } }
       .footer__bottom_right a {
         width: 40px;
         height: 40px;

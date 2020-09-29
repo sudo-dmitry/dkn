@@ -15,6 +15,10 @@
     pointer-events: none;
   }
 
+  @media (max-width: $screen-small) {
+    padding-bottom: 70%;
+  }
+
   iframe {
     position: absolute;
     top: 0;

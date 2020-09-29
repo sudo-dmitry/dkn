@@ -15,10 +15,27 @@
     display: flex;
     justify-content: space-between;
 
+    @media (max-width: $screen-small) {
+      flex-direction: column;
+    }
+
+    &__name {
+
+      @media (max-width: $screen-small) {
+        font-size: .8rem;
+        text-align: end;
+      }
+    }
+
     &__left {
       display: flex;
       width: 45%;
       justify-content: space-between;
+
+      @media (max-width: $screen-small) {
+        width: 100%;
+        margin-bottom: 20px;
+      }
 
       &>div {
         margin: auto 0;
@@ -35,6 +52,10 @@
       justify-content: space-between;
       margin: auto;
       line-height: 2.8;
+
+      @media (max-width: $screen-small) {
+        margin: inherit;
+      }
 
       a {
         width: 40px;

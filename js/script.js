@@ -93,8 +93,6 @@ $(document).ready(function(){
 
 })();
 
-
-
 // First Name
 
 // $("#fname").keyup(function() {
