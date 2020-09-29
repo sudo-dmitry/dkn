@@ -1,21 +1,28 @@
 .burger {
   display: none;
 
-  @media (max-width: $screen-small) {
+  @media (max-width: $screen-medium) {
     display: inherit;
   }
 
   #menuToggle {
-    display: block;
-    position: relative;
-    width: 35px;
-    top: -30px;
-    left: 20px;
+    @media (max-width: $screen-medium) {
+      display: block;
+      position: relative;
+      width: 35px;
+      top: -30px;
+      left: 40px;
 
-    z-index: 1;
+      z-index: 1;
 
-    -webkit-user-select: none;
-    user-select: none;
+      -webkit-user-select: none;
+      user-select: none;
+    }
+    @media (max-width: $screen-small) {
+      left: 20px;
+    }
+
+
 
     a {
       text-decoration: none;

@@ -38,6 +38,12 @@
 
       &>div {
         margin: auto 0;
+        @media (max-width: $screen-medium) {
+          margin-left: 30px;
+        }
+        @media (max-width: $screen-small) {
+          margin: auto 0;
+        }
       }
 
       img {

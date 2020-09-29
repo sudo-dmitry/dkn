@@ -19,6 +19,10 @@
       border: 2px solid #ffffff;
       border-radius: 30px;
       width: 68%;
+      @media (max-width: $screen-medium) {
+        width: 70%;
+        margin: 0 auto;
+      }
       @media (max-width: $screen-small) {
         width: 100%;
       }
@@ -49,17 +53,20 @@
         height: 480px;
         border-right: 2px dashed lightgrey;
 
-        @media (max-width: $screen-small) {
+        @media (max-width: $screen-medium) {
           flex-direction: column;
           border-right: none;
+          font-size: .9rem;
+          height: 630px;
+        }
+        @media (max-width: $screen-small) {
           font-size: .8rem;
-          height: 600px;
         }
 
         img {
           margin-left: 20px;
 
-          @media (max-width: $screen-small) {
+          @media (max-width: $screen-medium) {
             display: none;
           }
         }
@@ -69,7 +76,7 @@
           margin-right: 50px;
           width: 100%;
 
-          @media (max-width: $screen-small) {
+          @media (max-width: $screen-medium) {
             margin-left: 20px;
             margin-right: 20px;
             width: inherit;
@@ -80,7 +87,7 @@
             width: 100%;
             display: flex;
 
-            @media (max-width: $screen-small) {
+            @media (max-width: $screen-medium) {
               flex-direction: column;
               padding: 10px 0;
             }
@@ -94,7 +101,7 @@
               justify-content: space-between;
 
               label, svg, input {
-                @media (max-width: $screen-small) {
+                @media (max-width: $screen-medium) {
                   display: none;
                 }
               }
@@ -155,6 +162,14 @@
               &:hover {
                 background-color: darken($mainColor, 5%);
               }
+              @media (max-width: $screen-medium) {
+                font-size: 1.3rem;
+                padding: 10px 0;
+                margin: 10px 0;
+              }
+              @media (max-width: $screen-medium) {
+                font-size: 1rem;
+              }
             }
           }
 
@@ -162,7 +177,10 @@
             margin-top: 10px;
             font-size: 14px;
             text-align: end;
-
+            @media (max-width: $screen-medium) {
+              font-size: 13px;
+              margin-bottom: 5px;
+            }
             @media (max-width: $screen-small) {
               font-size: 12px;
             }
@@ -188,7 +206,7 @@
         .barcode {
           display: none;
 
-          @media (max-width: $screen-small) {
+          @media (max-width: $screen-medium) {
             display: inherit;
             margin: 10px 20px 0 20px;
           }
@@ -201,7 +219,7 @@
       border-radius: 30px;
       width: 32%;
 
-      @media (max-width: $screen-small) {
+      @media (max-width: $screen-medium) {
         display: none;
         width: 100%;
       }
