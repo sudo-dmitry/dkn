@@ -16,7 +16,7 @@
     justify-content: space-between;
 
     @media (max-width: $screen-small) {
-      flex-direction: column;
+      flex-direction: column-reverse;
     }
 
     &__name {
@@ -34,7 +34,6 @@
 
       @media (max-width: $screen-small) {
         width: 100%;
-        margin-bottom: 20px;
       }
 
       &>div {
@@ -55,6 +54,7 @@
 
       @media (max-width: $screen-small) {
         margin: inherit;
+        margin-bottom: 20px;
       }
 
       a {

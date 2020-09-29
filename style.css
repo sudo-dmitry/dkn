@@ -936,9 +936,9 @@ html, body {
     @media (max-width: 720px) {
       .footer__bottom {
         -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column; } }
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse; } }
     @media (max-width: 720px) {
       .footer__bottom__name {
         font-size: .8rem;
@@ -953,8 +953,7 @@ html, body {
               justify-content: space-between; }
       @media (max-width: 720px) {
         .footer__bottom__left {
-          width: 100%;
-          margin-bottom: 20px; } }
+          width: 100%; } }
       .footer__bottom__left > div {
         margin: auto 0; }
       .footer__bottom__left img {
@@ -971,7 +970,8 @@ html, body {
       line-height: 2.8; }
       @media (max-width: 720px) {
         .footer__bottom_right {
-          margin: inherit; } }
+          margin: inherit;
+          margin-bottom: 20px; } }
       .footer__bottom_right a {
         width: 40px;
         height: 40px;
