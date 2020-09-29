@@ -55,6 +55,10 @@
   &__area-two {
     padding-top: 100px;
 
+    @media (max-width: $screen-small) {
+      padding-top: 80px;
+    }
+
     &__title {
       font-size: 2rem;
       font-weight: 900;
@@ -67,6 +71,7 @@
 
       @media (max-width: $screen-small) {
         width: 100%;
+        padding-bottom: 40px;
       }
     }
 
@@ -79,6 +84,7 @@
       @media (max-width: $screen-small) {
         flex-direction: column;
         margin-left: 20px;
+        padding: 40px 0 40px 0;
       }
 
       .timeline__item {
