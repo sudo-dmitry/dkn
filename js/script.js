@@ -70,7 +70,6 @@ $(document).ready(function(){
 });
 
 
-
 // Sync inputs
 
 (function () {
@@ -92,43 +91,3 @@ $(document).ready(function(){
   }
 
 })();
-
-// First Name
-
-// $("#fname").keyup(function() {
-//   updateName();
-// });
-// 
-// function updateName() {
-//   $("#fname-small").val($('#fname').val());
-// }
-
-// Last Name
-
-// $("#lname").keyup(function() {
-//   updateLastName();
-// });
-// 
-// function updateLastName() {
-//   $("#lname-small").val($('#lname').val());
-// }
-
-// Phone
-
-// $("#tel").keyup(function() {
-//   updatePhone();
-// });
-// 
-// function updatePhone() {
-//   $("#tel-small").val($('#tel').val());
-// }
-
-// Phone
-
-// $("#email").keyup(function() {
-//   updateEmail();
-// });
-// 
-// function updateEmail() {
-//   $("#email-small").val($('#email').val());
-// }
