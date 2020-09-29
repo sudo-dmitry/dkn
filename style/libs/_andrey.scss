@@ -261,8 +261,8 @@ a[role=button] {
 	padding: 200px 0;
 	background: $color-blue;
 	color: $color-white;
-	@media (max-width: $screen-small) {
-		padding-bottom: 100px;
+	@media (max-width: $screen-medium) {
+		padding: 100px 0;
 	}
 	
 	.schedule-new__header {

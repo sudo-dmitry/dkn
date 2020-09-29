@@ -5,6 +5,10 @@
   background: $mainColor;
   color: $colorWhite;
 
+  @media (max-width: $screen-medium) {
+    padding: 50px 0;
+  }
+
   .schedule-new__header {
     display: flex;
 

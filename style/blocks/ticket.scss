@@ -2,6 +2,9 @@
   padding-top: 100px;
   padding-bottom: 150px;
 
+  @media (max-width: $screen-medium) {
+    padding-top: 20px;
+  }
   @media (max-width: $screen-small) {
     padding-bottom: 120px;
   }
@@ -123,6 +126,7 @@
               padding: 5px 10px;
               border: 1px solid $mainColor;
               border-radius: 10px;
+              appearance: none;
 
               @media (max-width: $screen-small) {
                 font-size: 16px;

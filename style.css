@@ -582,6 +582,9 @@ html, body {
   padding: 100px 0;
   background: #0A70B9;
   color: #ffffff; }
+  @media (max-width: 1080px) {
+    .schedule-new {
+      padding: 50px 0; } }
   .schedule-new .schedule-new__header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -668,6 +671,9 @@ html, body {
 .ticket {
   padding-top: 100px;
   padding-bottom: 150px; }
+  @media (max-width: 1080px) {
+    .ticket {
+      padding-top: 20px; } }
   @media (max-width: 720px) {
     .ticket {
       padding-bottom: 120px; } }
@@ -776,7 +782,10 @@ html, body {
               font-size: 20px;
               padding: 5px 10px;
               border: 1px solid #0A70B9;
-              border-radius: 10px; }
+              border-radius: 10px;
+              -webkit-appearance: none;
+                 -moz-appearance: none;
+                      appearance: none; }
               @media (max-width: 720px) {
                 .ticket .boarding__big__form-area__form__item input {
                   font-size: 16px; } }
@@ -1278,9 +1287,9 @@ a[role=button] {
   padding: 200px 0;
   background: #0a70b9;
   color: #fff; }
-  @media (max-width: 720px) {
+  @media (max-width: 1080px) {
     .schedule-new {
-      padding-bottom: 100px; } }
+      padding: 100px 0; } }
   .schedule-new .schedule-new__header {
     display: -webkit-box;
     display: -ms-flexbox;
