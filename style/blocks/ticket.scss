@@ -19,9 +19,8 @@
       border: 2px solid #ffffff;
       border-radius: 30px;
       width: 68%;
-
       @media (max-width: $screen-small) {
-        display: none;
+        width: 100%;
       }
 
       &__header {
@@ -50,8 +49,19 @@
         height: 480px;
         border-right: 2px dashed lightgrey;
 
+        @media (max-width: $screen-small) {
+          flex-direction: column;
+          border-right: none;
+          font-size: .8rem;
+          height: 580px;
+        }
+
         img {
           margin-left: 20px;
+
+          @media (max-width: $screen-small) {
+            display: none;
+          }
         }
 
         &__form {
@@ -59,10 +69,21 @@
           margin-right: 50px;
           width: 100%;
 
+          @media (max-width: $screen-small) {
+            margin-left: 20px;
+            margin-right: 20px;
+            width: inherit;
+          }
+
           &__item {
             padding: 18px 0;
             width: 100%;
             display: flex;
+
+            @media (max-width: $screen-small) {
+              flex-direction: column;
+              padding: 10px 0;
+            }
 
             &:first-child {
               padding-top: 0;
@@ -71,6 +92,17 @@
             &._date {
               padding-bottom: 0;
               justify-content: space-between;
+
+              label, svg, input {
+                @media (max-width: $screen-small) {
+                  display: none;
+                }
+              }
+
+              .submit {
+                display: inherit;
+                justify-content: center;
+              }
             }
 
             label {
@@ -127,6 +159,10 @@
             font-size: 14px;
             text-align: end;
 
+            @media (max-width: $screen-small) {
+              font-size: 12px;
+            }
+
             a {
               color: $colorBlack;
             }
@@ -144,6 +180,15 @@
             }
           }
         }
+
+        .barcode {
+          display: none;
+
+          @media (max-width: $screen-small) {
+            display: inherit;
+            margin: 10px 20px 0 20px;
+          }
+        }
       }
     }
 
@@ -153,6 +198,7 @@
       width: 32%;
 
       @media (max-width: $screen-small) {
+        display: none;
         width: 100%;
       }
 
@@ -254,5 +300,9 @@
   .price {
     margin-top: 30px;
     font-weight: 900;
+
+    @media (max-width: $screen-small) {
+      text-align: center;
+    }
   }
 }
