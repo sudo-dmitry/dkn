@@ -23,8 +23,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/blocks/burger.scss" beforeDir="false" afterPath="$PROJECT_DIR$/style/blocks/burger.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/blocks/showcase.scss" beforeDir="false" afterPath="$PROJECT_DIR$/style/blocks/showcase.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/blocks/about.scss" beforeDir="false" afterPath="$PROJECT_DIR$/style/blocks/about.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +113,7 @@
       <workItem from="1601309523469" duration="18159000" />
       <workItem from="1601360650856" duration="26000" />
       <workItem from="1601364891568" duration="1707000" />
-      <workItem from="1601372222264" duration="7415000" />
+      <workItem from="1601372222264" duration="8326000" />
     </task>
     <servers />
   </component>
