@@ -57,18 +57,18 @@
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "/style-min.css",
-		"oF": 1,
+		"oF": 0,
 		"oS": 3
 		},
 	"/style.css.map": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "/style.css.map",
-		"oF": 1
+		"oF": 0
 		},
 	"/style/blocks/about.scss": {
 		"aP": 0,
@@ -79,19 +79,6 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/style/blocks/about.css",
-		"oF": 0,
-		"oS": 0,
-		"sct": 0
-		},
-	"/style/blocks/contacts.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"ec": 1,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/style/blocks/contacts.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 0
@@ -253,16 +240,16 @@
 		"sct": 0
 		},
 	"/style/libs/style.scss": {
-		"aP": 1,
+		"aP": 0,
 		"bl": 0,
 		"dP": 10,
 		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "/style.css",
-		"oF": 2,
-		"oS": 3,
+		"oAP": "/style/libs/style.css",
+		"oF": 0,
+		"oS": 0,
 		"sct": 0
 		}
 	},

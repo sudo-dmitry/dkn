@@ -73,42 +73,64 @@ $(document).ready(function(){
 
 // Sync inputs
 
+(function () {
+  
+  let fname = document.getElementById('fname');
+  let lname = document.getElementById('lname');
+  let tel = document.getElementById('tel');
+  let email = document.getElementById('email');
+  
+  fname.addEventListener('keyup', function () { syncFields('fname') });
+  lname.addEventListener('keyup', function () { syncFields('lname') });
+  tel.addEventListener('keyup', function () { syncFields('tel') });
+  email.addEventListener('keyup', function () { syncFields('email') });
+  
+  function syncFields(name) {
+    let field = document.getElementById(name);
+    let copy = document.getElementById(name + '-small');
+    copy.value = field.value;
+  }
+
+})();
+
+
+
 // First Name
 
-$("#fname").keyup(function() {
-  updateName();
-});
-
-function updateName() {
-  $("#fname-small").val($('#fname').val());
-}
+// $("#fname").keyup(function() {
+//   updateName();
+// });
+// 
+// function updateName() {
+//   $("#fname-small").val($('#fname').val());
+// }
 
 // Last Name
 
-$("#lname").keyup(function() {
-  updateLastName();
-});
-
-function updateLastName() {
-  $("#lname-small").val($('#lname').val());
-}
-
-// Phone
-
-$("#tel").keyup(function() {
-  updatePhone();
-});
-
-function updatePhone() {
-  $("#tel-small").val($('#tel').val());
-}
+// $("#lname").keyup(function() {
+//   updateLastName();
+// });
+// 
+// function updateLastName() {
+//   $("#lname-small").val($('#lname').val());
+// }
 
 // Phone
 
-$("#email").keyup(function() {
-  updateEmail();
-});
+// $("#tel").keyup(function() {
+//   updatePhone();
+// });
+// 
+// function updatePhone() {
+//   $("#tel-small").val($('#tel').val());
+// }
 
-function updateEmail() {
-  $("#email-small").val($('#email').val());
-}
+// Phone
+
+// $("#email").keyup(function() {
+//   updateEmail();
+// });
+// 
+// function updateEmail() {
+//   $("#email-small").val($('#email').val());
+// }
