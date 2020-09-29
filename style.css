@@ -740,7 +740,10 @@ html, body {
               padding: 5px 20px;
               -webkit-transition: .3s;
               transition: .3s;
-              border-radius: 5px; }
+              border-radius: 5px;
+              -webkit-appearance: none;
+                 -moz-appearance: none;
+                      appearance: none; }
               .ticket .boarding__big__form-area__form__item .submit:hover {
                 background-color: #0961a1; }
           .ticket .boarding__big__form-area__form .confidential {
@@ -820,7 +823,10 @@ html, body {
           padding: 5px 20px;
           -webkit-transition: .3s;
           transition: .3s;
-          border-radius: 5px; }
+          border-radius: 5px;
+          -webkit-appearance: none;
+             -moz-appearance: none;
+                  appearance: none; }
           .ticket .boarding__small__form-area__form .submit:hover {
             background-color: #0961a1; }
           @media (max-width: 720px) {

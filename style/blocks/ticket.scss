@@ -115,6 +115,7 @@
               padding: 5px 20px;
               transition: .3s;
               border-radius: 5px;
+              appearance: none;
               &:hover {
                 background-color: darken($mainColor, 5%);
               }
@@ -221,6 +222,7 @@
             padding: 5px 20px;
             transition: .3s;
             border-radius: 5px;
+            appearance: none;
             &:hover {
               background-color: darken($mainColor, 5%);
             }
