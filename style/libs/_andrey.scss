@@ -96,6 +96,7 @@ a[role=button] {
 
 
 // Cut line with plane
+
 .cut-plane {
 	display: flex;
 	align-items: center;
@@ -148,219 +149,255 @@ a[role=button] {
 
 // Timeline
 
-.timeline {
-	position: relative;
-	display: flex;
-	width: 100%;
-	padding: 100px 0 160px 0;
-	
-	@media (max-width: $screen-small) {
-		flex-direction: column;
-		margin-left: 20px;
-	}
-	
-	.timeline__item {
-		position: relative;
-		width: 260px;
-		padding-left: 40px;
-		
-		@media (max-width: $screen-small) {
-			padding-left: 46px;
-		}
-		
-		&:before {
-			content: '';
-			position: absolute;
-			z-index: -1;
-			top: 47px;
-			right: 0;
-			width: 1000px;
-			height: 3px;
-			background: $color-white;
-			
-			@media (max-width: $screen-small) {
-				top: 0;
-				bottom: 0;
-				left: 14px;
-				right: auto;
-				width: 3px;
-				height: auto;
-			}
-		}
-		
-		&.-plane {
-			width: auto;
-			
-			&:before {
-				right: 10px;
-			}
-			
-			.icon {
-				margin-top: 30px;
-			}
-			
-			@media (max-width: $screen-small) {
-				
-				&:before {
-					right: auto;
-					bottom: 10px;
-				}
-				
-				.icon {
-					margin-left: -50px;
-					transform: rotate(90deg);
-				}
-			}
-		}
-	}
-	.timeline__year {
-		height: 32px;
-		
-		@media (max-width: $screen-small) {
-			position: relative;
-			top: 32px;
-			font-weight: 700;
-		}
-	}
-	.timeline__circle {
-		margin-left: -40px;
-		padding-bottom: 4px;
-		
-		@media (max-width: $screen-small) {
-			margin-left: -46px;
-		}
-		
-		&:before {
-			content: '';
-			position: relative;
-			z-index: 1;
-			display: block;
-			width: 26px;
-			height: 26px;
-			border: solid 3px #fff;
-			border-radius: 100%;
-			background: $color-blue;
-		}
-		
-		&.active:before {
-			background: $color-white;
-		}
-	}
-	.timeline__rent {
-		
-	}
-	.timeline__sold {
-		
-	}
-}
+// .timeline {
+// 	position: relative;
+// 	display: flex;
+// 	width: 100%;
+// 	padding: 100px 0 160px 0;
+// 	
+// 	@media (max-width: $screen-small) {
+// 		flex-direction: column;
+// 		margin-left: 20px;
+// 	}
+// 	
+// 	.timeline__item {
+// 		position: relative;
+// 		width: 260px;
+// 		padding-left: 40px;
+// 		
+// 		@media (max-width: $screen-small) {
+// 			padding-left: 46px;
+// 		}
+// 		
+// 		&:before {
+// 			content: '';
+// 			position: absolute;
+// 			z-index: -1;
+// 			top: 47px;
+// 			right: 0;
+// 			width: 1000px;
+// 			height: 3px;
+// 			background: $color-white;
+// 			
+// 			@media (max-width: $screen-small) {
+// 				top: 0;
+// 				bottom: 0;
+// 				left: 14px;
+// 				right: auto;
+// 				width: 3px;
+// 				height: auto;
+// 			}
+// 		}
+// 		
+// 		&.-plane {
+// 			width: auto;
+// 			
+// 			&:before {
+// 				right: 10px;
+// 			}
+// 			
+// 			.icon {
+// 				margin-top: 30px;
+// 			}
+// 			
+// 			@media (max-width: $screen-small) {
+// 				
+// 				&:before {
+// 					right: auto;
+// 					bottom: 10px;
+// 				}
+// 				
+// 				.icon {
+// 					margin-left: -50px;
+// 					transform: rotate(90deg);
+// 				}
+// 			}
+// 		}
+// 	}
+// 	.timeline__year {
+// 		height: 32px;
+// 		
+// 		@media (max-width: $screen-small) {
+// 			position: relative;
+// 			top: 32px;
+// 			font-weight: 700;
+// 		}
+// 	}
+// 	.timeline__circle {
+// 		margin-left: -40px;
+// 		padding-bottom: 4px;
+// 		
+// 		@media (max-width: $screen-small) {
+// 			margin-left: -46px;
+// 		}
+// 		
+// 		&:before {
+// 			content: '';
+// 			position: relative;
+// 			z-index: 1;
+// 			display: block;
+// 			width: 26px;
+// 			height: 26px;
+// 			border: solid 3px #fff;
+// 			border-radius: 100%;
+// 			background: $color-blue;
+// 		}
+// 		
+// 		&.active:before {
+// 			background: $color-white;
+// 		}
+// 	}
+// 	.timeline__rent {
+// 		
+// 	}
+// 	.timeline__sold {
+// 		
+// 	}
+// }
 
 
 // Schedule new section
 
-.schedule-new {
-	padding: 200px 0;
-	background: $color-blue;
-	color: $color-white;
-	@media (max-width: $screen-medium) {
-		padding: 100px 0;
+// .schedule-new {
+// 	padding: 200px 0;
+// 	background: $color-blue;
+// 	color: $color-white;
+// 	@media (max-width: $screen-medium) {
+// 		padding: 100px 0;
+// 	}
+// 	
+// 	.schedule-new__header {
+// 		display: flex;
+// 		
+// 		span {
+// 			margin-left: auto;
+// 			white-space: nowrap;
+// 			font-size: 1.8rem;
+// 			font-weight: 900;
+// 		}
+// 		
+// 		@media (max-width: $screen-medium) {
+// 			
+// 			span {
+// 				font-size: 1.4rem;
+// 			}
+// 		}
+// 		
+// 		@media (max-width: $screen-small) {
+// 			flex-direction: column;
+// 			
+// 			span {
+// 				margin-left: 0;
+// 				font-size: 1.2rem;
+// 			}
+// 		}
+// 	}
+// 	.schedule-new__items {
+// 		display: flex;
+// 		flex-wrap: wrap;
+// 		margin: 0 -30px;
+// 		
+// 		@media (max-width: $screen-medium) {
+// 			margin: 0;
+// 		}
+// 	}
+// 	.schedule-new__item {
+// 		flex: 1 0 50%;
+// 		max-width: 50%;
+// 		margin-top: 60px;
+// 		padding: 0 30px;
+// 		
+// 		@media (max-width: $screen-medium) {
+// 			flex: 1 0 100%;
+// 			max-width: none;
+// 			padding: 0;
+// 		}
+// 	}
+// 	.schedule-new__item-title {
+// 		font-size: 1.8rem;
+// 		font-weight: 900;
+// 		line-height: 1.2;
+// 		
+// 		@media (max-width: $screen-medium) {
+// 			font-size: 1.4rem;
+// 		}
+// 		
+// 		@media (max-width: $screen-medium) {
+// 			font-size: 1.2rem;
+// 		}
+// 	}
+// 	.schedule-new__item-time {
+// 		line-height: 1.2;
+// 	}
+// 	.schedule-new__item-description {
+// 		margin-top: 25px;
+// 	}
+// 	.schedule-new__cut-plane {
+// 		margin-top: 60px;
+// 	}
+// 	
+// 	.schedule-new__collapsed {
+// 		max-height: 0;
+// 		overflow: hidden;
+// 		transition: max-height .4s ease-out;
+// 		
+// 		&.check {
+// 			position: fixed;
+// 			z-index: -1;
+// 			top: 0;
+// 			left: 0;
+// 			max-height: none;
+// 			overflow: visible;
+// 			opacity: 0;
+// 		}
+// 		
+// 		.schedule-new__header {
+// 			margin-top: 60px;
+// 		}
+// 	}
+// 	&.expanded {
+// 		
+// 		.schedule-new__cut-plane {
+// 			
+// 			.icon {
+// 				transform: rotate(-90deg);
+// 			}
+// 		}
+// 	}
+// }
+
+
+
+
+.modal-done {
+	padding: 20px;
+	
+	@media (max-width: $screen-small) {
+		padding: 0;
 	}
 	
-	.schedule-new__header {
-		display: flex;
-		
-		span {
-			margin-left: auto;
-			white-space: nowrap;
-			font-size: 1.8rem;
-			font-weight: 900;
-		}
-		
-		@media (max-width: $screen-medium) {
-			
-			span {
-				font-size: 1.4rem;
-			}
-		}
-		
-		@media (max-width: $screen-small) {
-			flex-direction: column;
-			
-			span {
-				margin-left: 0;
-				font-size: 1.2rem;
-			}
-		}
-	}
-	.schedule-new__items {
-		display: flex;
-		flex-wrap: wrap;
-		margin: 0 -30px;
-		
-		@media (max-width: $screen-medium) {
-			margin: 0;
-		}
-	}
-	.schedule-new__item {
-		flex: 1 0 50%;
-		max-width: 50%;
-		margin-top: 60px;
-		padding: 0 30px;
-		
-		@media (max-width: $screen-medium) {
-			flex: 1 0 100%;
-			max-width: none;
-			padding: 0;
-		}
-	}
-	.schedule-new__item-title {
+	.modal-done__header {
 		font-size: 1.8rem;
 		font-weight: 900;
-		line-height: 1.2;
+		color: $color-blue;
+	}
+	.modal-done__text {
+		margin-top: 20px;
+		color: $color-blue;
 		
-		@media (max-width: $screen-medium) {
-			font-size: 1.4rem;
-		}
-		
-		@media (max-width: $screen-medium) {
-			font-size: 1.2rem;
+		p {
+			margin: .6rem 0;
 		}
 	}
-	.schedule-new__item-time {
-		line-height: 1.2;
-	}
-	.schedule-new__item-description {
-		margin-top: 25px;
-	}
-	.schedule-new__cut-plane {
-		margin-top: 60px;
-	}
+}
+
+
+.modal-text {
+	font-size: .8rem;
+	color: #000;
 	
-	.schedule-new__collapsed {
-		max-height: 0;
-		overflow: hidden;
-		transition: max-height .4s ease-out;
-		
-		&.check {
-			position: fixed;
-			z-index: -1;
-			top: 0;
-			left: 0;
-			max-height: none;
-			overflow: visible;
-			opacity: 0;
-		}
-		
-		.schedule-new__header {
-			margin-top: 60px;
-		}
-	}
-	&.expanded {
-		
-		.schedule-new__cut-plane {
-			
-			.icon {
-				transform: rotate(-90deg);
-			}
-		}
+	p {
+		margin: .8rem;
+		line-height: 1.6;
 	}
 }
