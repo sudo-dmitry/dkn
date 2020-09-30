@@ -198,6 +198,9 @@ a {
   @media (max-width: 1080px) {
     .header {
       height: 100px; } }
+  @media (max-width: 720px) {
+    .header {
+      height: 80px; } }
   .header .main-nav {
     display: flex;
     justify-content: space-between;
@@ -227,6 +230,9 @@ a {
       .header .main-nav__logo img {
         display: block;
         max-width: 150px; }
+        @media (max-width: 720px) {
+          .header .main-nav__logo img {
+            max-width: 100px; } }
     .header .main-nav__items {
       display: flex; }
       @media (max-width: 1080px) {

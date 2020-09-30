@@ -13,6 +13,10 @@
     height: 100px;
   }
 
+  @media (max-width: $screen-small) {
+    height: 80px;
+  }
+
   .main-nav {
     display: flex;
     justify-content: space-between;
@@ -51,6 +55,10 @@
       img {
         display: block;
         max-width: 150px;
+
+        @media (max-width: $screen-small) {
+          max-width: 100px;
+        }
       }
     }
 
