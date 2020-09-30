@@ -200,7 +200,8 @@ a {
       height: 100px; } }
   @media (max-width: 720px) {
     .header {
-      height: 80px; } }
+      height: 80px;
+      padding-top: 20px; } }
   .header .main-nav {
     display: flex;
     justify-content: space-between;
