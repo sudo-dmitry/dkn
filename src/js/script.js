@@ -3,8 +3,8 @@
 
 (function () {
 
-  let speakers = document.querySelector('.speakers-new');
-  let speakersCollapsed = document.querySelector('.speakers-new__collapsed');
+  let speakers = document.querySelector('.speakers');
+  let speakersCollapsed = document.querySelector('.speakers__collapsed');
   let speakersCollapsedHeight = 0;
   let toggler = document.getElementById('speakers-toggler');
   let isExpanded = false;
@@ -31,8 +31,8 @@
 
 (function () {
 
-  let schedule = document.querySelector('.schedule-new');
-  let scheduleCollapsed = document.querySelector('.schedule-new__collapsed');
+  let schedule = document.querySelector('.schedule');
+  let scheduleCollapsed = document.querySelector('.schedule__collapsed');
   let scheduleCollapsedHeight = 0;
   let toggler = document.getElementById('schedule-toggler');
   let isExpanded = false;

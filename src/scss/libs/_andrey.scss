@@ -258,7 +258,7 @@ a[role=button] {
 
 // Schedule new section
 
-// .schedule-new {
+// .schedule {
 // 	padding: 200px 0;
 // 	background: $color-blue;
 // 	color: $color-white;
@@ -266,7 +266,7 @@ a[role=button] {
 // 		padding: 100px 0;
 // 	}
 // 	
-// 	.schedule-new__header {
+// 	.schedule__header {
 // 		display: flex;
 // 		
 // 		span {
@@ -292,7 +292,7 @@ a[role=button] {
 // 			}
 // 		}
 // 	}
-// 	.schedule-new__items {
+// 	.schedule__items {
 // 		display: flex;
 // 		flex-wrap: wrap;
 // 		margin: 0 -30px;
@@ -301,7 +301,7 @@ a[role=button] {
 // 			margin: 0;
 // 		}
 // 	}
-// 	.schedule-new__item {
+// 	.schedule__item {
 // 		flex: 1 0 50%;
 // 		max-width: 50%;
 // 		margin-top: 60px;
@@ -313,7 +313,7 @@ a[role=button] {
 // 			padding: 0;
 // 		}
 // 	}
-// 	.schedule-new__item-title {
+// 	.schedule__item-title {
 // 		font-size: 1.8rem;
 // 		font-weight: 900;
 // 		line-height: 1.2;
@@ -326,17 +326,17 @@ a[role=button] {
 // 			font-size: 1.2rem;
 // 		}
 // 	}
-// 	.schedule-new__item-time {
+// 	.schedule__item-time {
 // 		line-height: 1.2;
 // 	}
-// 	.schedule-new__item-description {
+// 	.schedule__item-description {
 // 		margin-top: 25px;
 // 	}
-// 	.schedule-new__cut-plane {
+// 	.schedule__cut-plane {
 // 		margin-top: 60px;
 // 	}
 // 	
-// 	.schedule-new__collapsed {
+// 	.schedule__collapsed {
 // 		max-height: 0;
 // 		overflow: hidden;
 // 		transition: max-height .4s ease-out;
@@ -351,13 +351,13 @@ a[role=button] {
 // 			opacity: 0;
 // 		}
 // 		
-// 		.schedule-new__header {
+// 		.schedule__header {
 // 			margin-top: 60px;
 // 		}
 // 	}
 // 	&.expanded {
 // 		
-// 		.schedule-new__cut-plane {
+// 		.schedule__cut-plane {
 // 			
 // 			.icon {
 // 				transform: rotate(-90deg);
