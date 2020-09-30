@@ -18,6 +18,10 @@
   .boarding {
     display: flex;
 
+    input {
+      margin: 0;
+    }
+
     &__big {
       border: 2px solid #ffffff;
       border-radius: 30px;
@@ -53,17 +57,18 @@
         padding-top: 20px;
         padding-bottom: 20px;
         display: flex;
-        height: 480px;
+        height: 460px;
         border-right: 2px dashed lightgrey;
 
         @media (max-width: $screen-medium) {
           flex-direction: column;
           border-right: none;
           font-size: .9rem;
-          height: 670px;
+          height: 650px;
         }
         @media (max-width: $screen-small) {
           font-size: .8rem;
+          height: 610px;
         }
 
         img {
@@ -212,7 +217,7 @@
 
           @media (max-width: $screen-medium) {
             display: inherit;
-            margin: 10px 20px 0 20px;
+            margin: 20px 20px 0 20px;
           }
         }
       }
@@ -260,7 +265,7 @@
         padding: 20px 30px;
         font-weight: 500;
         border-left: 2px dashed lightgrey;
-        height: 480px;
+        height: 460px;
 
         @media (max-width: $screen-small) {
           border-left: none;
