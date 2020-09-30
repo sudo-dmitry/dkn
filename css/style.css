@@ -503,6 +503,9 @@ a {
   @media (max-width: 1080px) {
     .schedule {
       padding: 50px 0; } }
+  @media (max-width: 720px) {
+    .schedule {
+      padding: 70px 0; } }
   .schedule .schedule__header {
     display: flex; }
     .schedule .schedule__header span {

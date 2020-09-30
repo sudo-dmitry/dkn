@@ -9,6 +9,10 @@
     padding: 50px 0;
   }
 
+  @media (max-width: $screen-small) {
+    padding: 70px 0;
+  }
+
   .schedule__header {
     display: flex;
 
