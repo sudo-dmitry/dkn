@@ -78,3 +78,19 @@
 
 })();
 
+// Burger Menu
+
+const burger = document.getElementById('burger');
+const items = document.querySelectorAll('.js-item');
+for (const item of items) {
+  item.onclick = () => {
+    burger.checked = false;
+  }
+}
+
+window.onclick = (e) => {
+  const menu = document.getElementById('menuToggle');
+  if (e.target !== menu && !menu.contains(e.target)) {
+    burger.checked = false;
+  }
+}

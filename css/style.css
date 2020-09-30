@@ -76,25 +76,25 @@ a {
 
 @font-face {
   font-family: 'Value Sans Pro';
-  src: url("fonts/value-sans-bold-pro.otf") format("opentype");
+  src: url("../fonts/value-sans-bold-pro.otf") format("opentype");
   font-weight: bold;
   font-style: normal;
   font-display: swap; }
 @font-face {
   font-family: "Value Sans Pro";
-  src: url("fonts/value-sans-regular-pro.otf") format("opentype");
+  src: url("../fonts/value-sans-regular-pro.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
   font-display: swap; }
 @font-face {
   font-family: "Value Sans Pro";
-  src: url("fonts/value-sans-medium-pro.otf") format("opentype");
+  src: url("../fonts/value-sans-medium-pro.otf") format("opentype");
   font-weight: 500;
   font-style: normal;
   font-display: swap; }
 @font-face {
   font-family: "Value Sans Pro";
-  src: url("fonts/value-sans-black-pro.otf") format("opentype");
+  src: url("../fonts/value-sans-black-pro.otf") format("opentype");
   font-weight: 900;
   font-style: normal;
   font-display: swap; }
@@ -733,7 +733,7 @@ a {
               border-radius: 5px;
               border: 1px solid #0A70B9; }
               .ticket .boarding__big__form-area__form .confidential #checkbox:checked {
-                background-image: url("img/check-solid.svg"); }
+                background-image: url("../img/check-solid.svg"); }
         .ticket .boarding__big__form-area .barcode {
           display: none; }
           @media (max-width: 1080px) {
