@@ -23,7 +23,7 @@
     align-items: center;
 
     @media (max-width: $screen-medium) {
-      justify-content: flex-end;
+      justify-content: space-between;
     }
 
     .mob-btn {
