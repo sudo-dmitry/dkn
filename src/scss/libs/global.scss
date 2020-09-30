@@ -20,19 +20,13 @@ html, body {
 }
 
 .container {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0 40px;
   width: 100%;
   max-width: 1300px;
   margin: 0 auto;
 
-  @media (max-width: $screen-medium) {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
   @media (max-width: $screen-small) {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 0 20px;
   }
 }
 

@@ -84,17 +84,17 @@ $buttons-colors: (
 ) !default;
 
 
-@import "_functions";
-@import "_reset";
-@import "_adaptive";
-@import "_helpers";
-@import "_grid";
-@import "_spacing";
-@import "_blocks";
-@import "_inline-blocks";
-@import "_links";
-@import "_modal";
-@import "_typo";
-@import "_buttons";
-@import "_debug";
-@import "_forms";
+@import "functions";
+@import "reset";
+@import "adaptive";
+@import "helpers";
+@import "grid";
+@import "spacing";
+@import "blocks";
+@import "inline-blocks";
+@import "links";
+@import "modal";
+@import "typo";
+@import "buttons";
+@import "debug";
+@import "forms";
