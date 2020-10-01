@@ -1,343 +1,273 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
     <link rel="stylesheet" href="css/style.css">
     <title>Бизнес-тур в «Бизнес класс» | Аякс</title>
 </head>
 <body id="home">
-    
-<!-- SVG icons  -->
-<div id="svgicons">
-    <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
-        <symbol id="icon-plane" viewBox="0 0 576 512">
-            <path d="M480 192H365.71L260.61 8.06A16.014 16.014 0 0 0 246.71 0h-65.5c-10.63 0-18.3 10.17-15.38 20.39L214.86 192H112l-43.2-57.6c-3.02-4.03-7.77-6.4-12.8-6.4H16.01C5.6 128-2.04 137.78.49 147.88L32 256 .49 364.12C-2.04 374.22 5.6 384 16.01 384H56c5.04 0 9.78-2.37 12.8-6.4L112 320h102.86l-49.03 171.6c-2.92 10.22 4.75 20.4 15.38 20.4h65.5c5.74 0 11.04-3.08 13.89-8.06L365.71 320H480c35.35 0 96-28.65 96-64s-60.65-64-96-64z"></path>
-        </symbol>
-    </svg>
-</div>
-
-<header class="header">
-    <div class="container">
-
-        <!-- Navbar -->
-
-        <nav class="main-nav">
-
-            <a data-scrollto="home" class="main-nav__logo scroll">
-                <img src="img/logo.png" alt="АЯКС">
-            </a>
-
-            <div class="main-nav__item mob-btn">
-                <a data-scrollto="buy" class="btn scroll">Регистрация</a>
-            </div>
-
-            <div class="main-nav__items">
-                <div class="main-nav__item">
-                    <a class="main-nav__item-link" data-scrollto="speakers">Спикеры</a>
-                </div>
-                <div class="main-nav__item">
-                    <a class="main-nav__item-link" data-scrollto="schedule">Расписание</a>
-                </div>
-                <div class="main-nav__item">
-                    <a class="main-nav__item-link" data-scrollto="price">Стоимость</a>
-                </div>
-                <div class="main-nav__item" style="padding-right: 0">
-                    <a class="btn" data-scrollto="buy">Регистрация</a>
-                </div>
-            </div>
-
-            <div class="burger">
-                <div id="menuToggle">
-                    <input type="checkbox" id="burger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <ul id="menu">
-                        <a data-scrollto="speakers" class="main-nav__item__link scroll js-item"><li>Спикеры</li></a>
-                        <a data-scrollto="schedule" class="main-nav__item__link scroll js-item"><li>Расписание</li></a>
-                        <a data-scrollto="price" class="main-nav__item__link scroll js-item"><li>Стоимость</li></a>
-                    </ul>
-                </div>
-            </div>
-
-        </nav>
-
-    </div>
-
-
-
-
-</header>
-
-<!-- Showcase -->
-
-<section class="showcase">
-    <div class="container">
-
-        <h1 class="showcase__title">
-            Бизнес-тур в
-            <br>
-            «Бизнес класс»
-        </h1>
-
-        <p class="showcase__desc">
-            Впервые от Департамента коммерческой
-            <br>
-            недвижимости Агентства недвижимости «Аякс»
-        </p>
-
-        <p class="showcase__trip">
-            Ваше путешествие
-            <br>
-            начинается
-        </p>
-
-    </div>
-
-    <div class="showcase__plane">
-        <svg class="icon -plane">
-            <use xlink:href="#icon-plane"></use>
+        
+        
+    <!-- SVG icons  -->
+    <div id="svgicons">
+        <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+            <symbol id="icon-plane" viewBox="0 0 576 512">
+                <path d="M480 192H365.71L260.61 8.06A16.014 16.014 0 0 0 246.71 0h-65.5c-10.63 0-18.3 10.17-15.38 20.39L214.86 192H112l-43.2-57.6c-3.02-4.03-7.77-6.4-12.8-6.4H16.01C5.6 128-2.04 137.78.49 147.88L32 256 .49 364.12C-2.04 374.22 5.6 384 16.01 384H56c5.04 0 9.78-2.37 12.8-6.4L112 320h102.86l-49.03 171.6c-2.92 10.22 4.75 20.4 15.38 20.4h65.5c5.74 0 11.04-3.08 13.89-8.06L365.71 320H480c35.35 0 96-28.65 96-64s-60.65-64-96-64z"></path>
+            </symbol>
         </svg>
     </div>
-
-    <div class="container">
-
-        <p class="showcase__date">13, 14, 15, ноября 2020</p>
-
-    </div>
-</section>
-
-<!-- About -->
-
-<section class="about">
-    <div class="container">
-        <div class="about__area-one">
-            <div class="about__area-one__text">
-                <p>На Бизнес-туре вы узнаете как создать коммерческий отдел, построить команду мечты и захватить рынок
-                </p>
-            </div>
-            <div class="about__area-one__image">
-                <img src="img/prize.jpeg" alt="ДКН">
-            </div>
-        </div>
-    </div>
-
-    <hr>
-
-    <div class="about__area-two">
+    
+    
+    <!-- Header -->
+    <header class="header">
         <div class="container">
-            <div class="about__area-two__title">
-                Кто мы
-            </div>
-            <div class="about__area-two__text">
-                <p>
-                    Департамент коммерческой недвижимости «Аякс» специализируется на коммерческой недвижимости. Компания располагает крупнейшей региональной базой объектов: от небольших магазинов стрит-ритейла до складских и торговых помещений, офисных центров и больших предприятий.
-                </p>
-                <br>
-                <p>
-                    В департаменте задействованы 60 ведущих профессиональных агентов с многолетним опытом работы, которые обеспечивают полный комплекс высококачественных услуг по подбору коммерческой недвижимости в соответствии с бюджетом и индивидуальными потребностями клиента.
-                </p>
-            </div>
-
-            <div class="timeline about__timeline">
-                <div class="timeline__item">
-                    <div class="timeline__year">2016 год</div>
-                    <div class="timeline__circle"></div>
-                    <div class="timeline__rent">389 арендовано</div>
-                    <div class="timeline__sold">279 продано</div>
+    
+            <!-- Navbar -->
+            <nav class="main-nav">
+                <a data-scrollto="home" class="main-nav__logo">
+                    <img src="img/logo.png" alt="АЯКС">
+                </a>
+                <div class="main-nav__item mob-btn">
+                    <a data-scrollto="buy" class="btn scroll">Регистрация</a>
                 </div>
-                <div class="timeline__item">
-                    <div class="timeline__year">2017 год</div>
-                    <div class="timeline__circle"></div>
-                    <div class="timeline__rent">611 арендовано</div>
-                    <div class="timeline__sold">305 продано</div>
+                <div class="main-nav__items">
+                    <div class="main-nav__item">
+                        <a class="main-nav__item-link" data-scrollto="speakers">Спикеры</a>
+                    </div>
+                    <div class="main-nav__item">
+                        <a class="main-nav__item-link" data-scrollto="schedule">Расписание</a>
+                    </div>
+                    <div class="main-nav__item">
+                        <a class="main-nav__item-link" data-scrollto="price">Стоимость</a>
+                    </div>
+                    <div class="main-nav__item" style="padding-right: 0">
+                        <a class="btn" data-scrollto="buy">Регистрация</a>
+                    </div>
                 </div>
-                <div class="timeline__item">
-                    <div class="timeline__year">2018 год</div>
-                    <div class="timeline__circle"></div>
-                    <div class="timeline__rent">643 арендовано</div>
-                    <div class="timeline__sold">598 продано</div>
+                <div class="burger">
+                    <div id="menuToggle">
+                        <input type="checkbox" id="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <ul id="menu">
+                            <a data-scrollto="speakers" class="js-burger-item"><li>Спикеры</li></a>
+                            <a data-scrollto="schedule" class="js-burger-item"><li>Расписание</li></a>
+                            <a data-scrollto="price" class="js-burger-item"><li>Стоимость</li></a>
+                        </ul>
+                    </div>
                 </div>
-                <div class="timeline__item">
-                    <div class="timeline__year">2019 год</div>
-                    <div class="timeline__circle active"></div>
-                    <div class="timeline__rent">694 арендовано</div>
-                    <div class="timeline__sold">536 продано</div>
-                </div>
-                <div class="timeline__item -plane">
-                    <svg class="icon -plane">
-                        <use xlink:href="#icon-plane"></use>
-                    </svg>
-                </div>
-            </div>
-
+            </nav>
         </div>
-
-    </div>
-</section>
-
-<!-- Speakers -->
-
-<section class="speakers" id="speakers">
-
-    <div class="container">
-        <div class="section__header speakers__header">
-            <h2>Спикеры</h2>
+    </header>
+    
+    
+    <!-- Showcase -->
+    <section class="showcase">
+        <div class="container">
+            <h1 class="showcase__title">
+                Бизнес-тур в<br>
+                «Бизнес класс»
+            </h1>
+            <p class="showcase__desc">
+                Впервые от Департамента коммерческой<br>
+                недвижимости Агентства недвижимости «Аякс»
+            </p>
+            <p class="showcase__trip">
+                Ваше путешествие<br>
+                начинается
+            </p>
         </div>
-        <div class="speakers__items">
-            <div class="speakers__item">
-                <div class="speakers__item-title">Иван Сергеев</div>
-                <div class="speakers__item-position">Специалист</div>
-                <div class="speakers__item-description">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore doloribus earum esse, et illum tempora? Autem deserunt ipsum iste porro.
+        <div class="showcase__plane">
+            <svg class="icon -plane">
+                <use xlink:href="#icon-plane"></use>
+            </svg>
+        </div>
+        <div class="container">
+            <p class="showcase__date">13, 14, 15 ноября 2020</p>
+        </div>
+    </section>
+    
+    
+    <!-- About -->
+    <section class="about">
+        <div class="container">
+            <div class="about__area-one">
+                <div class="about__area-one__text">
+                    <p>На Бизнес-туре вы узнаете, как создать коммерческий отдел, построить команду мечты и захватить рынок.</p>
                 </div>
-            </div>
-            <div class="speakers__item">
-                <div class="speakers__item-title">Михаил Андреев</div>
-                <div class="speakers__item-position">Специалист</div>
-                <div class="speakers__item-description">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, mollitia, quaerat? Debitis doloremque explicabo fugit ipsum numquam quos rerum unde?
-                </div>
-            </div>
-            <div class="speakers__item">
-                <div class="speakers__item-title">Андей Иванов</div>
-                <div class="speakers__item-position">Специалист</div>
-                <div class="speakers__item-description">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, aut hic laudantium nulla perspiciatis provident quod unde vitae voluptatibus. Delectus.
-                </div>
-            </div>
-            <div class="speakers__item">
-                <div class="speakers__item-title">Дмитрий Петров</div>
-                <div class="speakers__item-position">Специалист</div>
-                <div class="speakers__item-description">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab commodi eaque ipsum itaque mollitia quia quis, quos rem totam.
+                <div class="about__area-one__image">
+                    <img src="img/prize.jpeg" alt="ДКН">
                 </div>
             </div>
         </div>
-
-        <!-- Hidden content -->
-        <div class="speakers__collapsed">
+        <hr>
+        <div class="about__area-two">
+            <div class="container">
+                <div class="about__area-two__title">Кто мы</div>
+                <div class="about__area-two__text">
+                    <p>Департамент коммерческой недвижимости «Аякс» специализируется на коммерческой недвижимости. Компания располагает крупнейшей региональной базой объектов: от небольших магазинов стрит-ритейла до складских и торговых помещений, офисных центров и больших предприятий.</p><br>
+                    <p>В департаменте задействованы 60 ведущих профессиональных агентов с многолетним опытом работы, которые обеспечивают полный комплекс высококачественных услуг по подбору коммерческой недвижимости в соответствии с бюджетом и индивидуальными потребностями клиента.</p>
+                </div>
+                <div class="timeline about__timeline">
+                    <div class="timeline__item">
+                        <div class="timeline__year">2016 год</div>
+                        <div class="timeline__circle"></div>
+                        <div class="timeline__rent">389 арендовано</div>
+                        <div class="timeline__sold">279 продано</div>
+                    </div>
+                    <div class="timeline__item">
+                        <div class="timeline__year">2017 год</div>
+                        <div class="timeline__circle"></div>
+                        <div class="timeline__rent">611 арендовано</div>
+                        <div class="timeline__sold">305 продано</div>
+                    </div>
+                    <div class="timeline__item">
+                        <div class="timeline__year">2018 год</div>
+                        <div class="timeline__circle"></div>
+                        <div class="timeline__rent">643 арендовано</div>
+                        <div class="timeline__sold">598 продано</div>
+                    </div>
+                    <div class="timeline__item">
+                        <div class="timeline__year">2019 год</div>
+                        <div class="timeline__circle active"></div>
+                        <div class="timeline__rent">694 арендовано</div>
+                        <div class="timeline__sold">536 продано</div>
+                    </div>
+                    <div class="timeline__item -plane">
+                        <svg class="icon -plane">
+                            <use xlink:href="#icon-plane"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- Speakers -->
+    <section class="speakers" id="speakers">
+        <div class="container">
+            <div class="section__header speakers__header">
+                <h2>Спикеры</h2>
+            </div>
             <div class="speakers__items">
                 <div class="speakers__item">
                     <div class="speakers__item-title">Иван Сергеев</div>
                     <div class="speakers__item-position">Специалист</div>
                     <div class="speakers__item-description">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequuntur culpa cum dicta fugiat inventore mollitia obcaecati soluta temporibus velit!
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore doloribus earum esse, et illum tempora? Autem deserunt ipsum iste porro.
                     </div>
                 </div>
                 <div class="speakers__item">
                     <div class="speakers__item-title">Михаил Андреев</div>
                     <div class="speakers__item-position">Специалист</div>
                     <div class="speakers__item-description">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam distinctio ea et ipsam numquam perspiciatis quasi rerum similique temporibus voluptate?
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, mollitia, quaerat? Debitis doloremque explicabo fugit ipsum numquam quos rerum unde?
                     </div>
                 </div>
                 <div class="speakers__item">
                     <div class="speakers__item-title">Андей Иванов</div>
                     <div class="speakers__item-position">Специалист</div>
                     <div class="speakers__item-description">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse ex expedita ipsum iusto laboriosam nesciunt nihil quasi quo quos recusandae.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, aut hic laudantium nulla perspiciatis provident quod unde vitae voluptatibus. Delectus.
                     </div>
                 </div>
                 <div class="speakers__item">
                     <div class="speakers__item-title">Дмитрий Петров</div>
                     <div class="speakers__item-position">Специалист</div>
                     <div class="speakers__item-description">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias corporis culpa ea eaque esse maxime molestias quibusdam rerum ut voluptas!
-                    </div>
-                </div>
-                <div class="speakers__item">
-                    <div class="speakers__item-title">Иван Сергеев</div>
-                    <div class="speakers__item-position">Специалист</div>
-                    <div class="speakers__item-description">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquam commodi est explicabo facere libero minima nihil quibusdam saepe ullam?
-                    </div>
-                </div>
-                <div class="speakers__item">
-                    <div class="speakers__item-title">Михаил Андреев</div>
-                    <div class="speakers__item-position">Специалист</div>
-                    <div class="speakers__item-description">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam aliquid aperiam architecto esse fugit id inventore itaque odio voluptatem.
-                    </div>
-                </div>
-                <div class="speakers__item">
-                    <div class="speakers__item-title">Андей Иванов</div>
-                    <div class="speakers__item-position">Специалист</div>
-                    <div class="speakers__item-description">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci asperiores assumenda atque deleniti expedita libero perferendis quidem tempora ut.
-                    </div>
-                </div>
-                <div class="speakers__item">
-                    <div class="speakers__item-title">Дмитрий Петров</div>
-                    <div class="speakers__item-position">Специалист</div>
-                    <div class="speakers__item-description">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A atque debitis dolor enim excepturi facilis ipsum officia optio sapiente unde?
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab commodi eaque ipsum itaque mollitia quia quis, quos rem totam.
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-
-    <div class="cut-plane -blue speakers__cut-plane">
-        <div class="cut-plane__left"></div>
-        <div class="cut-plane__icon">
-            <a role="button" id="speakers-toggler">
-                <svg class="icon -plane -rotate-90">
-                    <use xlink:href="#icon-plane"></use>
-                </svg>
-            </a>
-        </div>
-        <div class="cut-plane__right"></div>
-    </div>
-
-</section>
-
-<!-- Schedule -->
-
-<section class="schedule" id="schedule">
     
-    <div class="container">
-        <div class="section__header schedule__header">
-            <h2>Расписание</h2>
-            <span>День 1</span>
+            <!-- Hidden content -->
+            <div class="speakers__collapsed">
+                <div class="speakers__items">
+                    <div class="speakers__item">
+                        <div class="speakers__item-title">Иван Сергеев</div>
+                        <div class="speakers__item-position">Специалист</div>
+                        <div class="speakers__item-description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequuntur culpa cum dicta fugiat inventore mollitia obcaecati soluta temporibus velit!
+                        </div>
+                    </div>
+                    <div class="speakers__item">
+                        <div class="speakers__item-title">Михаил Андреев</div>
+                        <div class="speakers__item-position">Специалист</div>
+                        <div class="speakers__item-description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam distinctio ea et ipsam numquam perspiciatis quasi rerum similique temporibus voluptate?
+                        </div>
+                    </div>
+                    <div class="speakers__item">
+                        <div class="speakers__item-title">Андей Иванов</div>
+                        <div class="speakers__item-position">Специалист</div>
+                        <div class="speakers__item-description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse ex expedita ipsum iusto laboriosam nesciunt nihil quasi quo quos recusandae.
+                        </div>
+                    </div>
+                    <div class="speakers__item">
+                        <div class="speakers__item-title">Дмитрий Петров</div>
+                        <div class="speakers__item-position">Специалист</div>
+                        <div class="speakers__item-description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias corporis culpa ea eaque esse maxime molestias quibusdam rerum ut voluptas!
+                        </div>
+                    </div>
+                    <div class="speakers__item">
+                        <div class="speakers__item-title">Иван Сергеев</div>
+                        <div class="speakers__item-position">Специалист</div>
+                        <div class="speakers__item-description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquam commodi est explicabo facere libero minima nihil quibusdam saepe ullam?
+                        </div>
+                    </div>
+                    <div class="speakers__item">
+                        <div class="speakers__item-title">Михаил Андреев</div>
+                        <div class="speakers__item-position">Специалист</div>
+                        <div class="speakers__item-description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam aliquid aperiam architecto esse fugit id inventore itaque odio voluptatem.
+                        </div>
+                    </div>
+                    <div class="speakers__item">
+                        <div class="speakers__item-title">Андей Иванов</div>
+                        <div class="speakers__item-position">Специалист</div>
+                        <div class="speakers__item-description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci asperiores assumenda atque deleniti expedita libero perferendis quidem tempora ut.
+                        </div>
+                    </div>
+                    <div class="speakers__item">
+                        <div class="speakers__item-title">Дмитрий Петров</div>
+                        <div class="speakers__item-position">Специалист</div>
+                        <div class="speakers__item-description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A atque debitis dolor enim excepturi facilis ipsum officia optio sapiente unde?
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="schedule__items">
-            <div class="schedule__item">
-                <div class="schedule__item-title">Иван Сергеев</div>
-                <div class="schedule__item-time">23 сентября • 10:30</div>
-                <div class="schedule__item-description">
-                    Агент по продажам коммерческой недвижимости со стажем более 10 лет. Раскроет вам некоторые секреты успешных продаж крупных объектов.
-                </div>
+        <div class="cut-plane -blue speakers__cut-plane">
+            <div class="cut-plane__left"></div>
+            <div class="cut-plane__icon">
+                <a role="button" id="speakers-toggler">
+                    <svg class="icon -plane -rotate-90">
+                        <use xlink:href="#icon-plane"></use>
+                    </svg>
+                </a>
             </div>
-            <div class="schedule__item">
-                <div class="schedule__item-title">Михаил Андреев</div>
-                <div class="schedule__item-time">23 сентября • 12:30</div>
-                <div class="schedule__item-description">
-                    Заместитель генерального директора по международным бизнес-связям с партнерами агентства. Интересная история из жизни.
-                </div>
-            </div>
-            <div class="schedule__item">
-                <div class="schedule__item-title">Андей Иванов</div>
-                <div class="schedule__item-time">23 сентября • 14:30</div>
-                <div class="schedule__item-description">
-                    Исполнительный директор по вторичному рынку. Самые необычные сделки для агента, опыт продажи объектов недвижимости.
-                </div>
-            </div>
-            <div class="schedule__item">
-                <div class="schedule__item-title">Дмитрий Петров</div>
-                <div class="schedule__item-time">23 сентября • 16:30</div>
-                <div class="schedule__item-description">
-                    Бизнес-тренер по саморазвитию, расскажет как показать себя и наладить отношения с партнерами по бизнесу.
-                </div>
-            </div>
+            <div class="cut-plane__right"></div>
         </div>
-
-        <!-- Hidden content -->
-        <div class="schedule__collapsed">
+    </section>
+    
+    
+    <!-- Schedule -->
+    <section class="schedule" id="schedule">
+        <div class="container">
+            <div class="section__header schedule__header">
+                <h2>Расписание</h2>
+                <span>День 1</span>
+            </div>
             <div class="schedule__items">
                 <div class="schedule__item">
                     <div class="schedule__item-title">Иван Сергеев</div>
@@ -368,209 +298,219 @@
                     </div>
                 </div>
             </div>
-            <div class="section__header schedule__header">
-                <span>День 2</span>
-            </div>
-            <div class="schedule__items">
-                <div class="schedule__item">
-                    <div class="schedule__item-title">Иван Сергеев</div>
-                    <div class="schedule__item-time">24 сентября • 10:30</div>
-                    <div class="schedule__item-description">
-                        Агент по продажам коммерческой недвижимости со стажем более 10 лет. Раскроет вам некоторые секреты успешных продаж крупных объектов.
-                    </div>
-                </div>
-                <div class="schedule__item">
-                    <div class="schedule__item-title">Михаил Андреев</div>
-                    <div class="schedule__item-time">24 сентября • 12:30</div>
-                    <div class="schedule__item-description">
-                        Заместитель генерального директора по международным бизнес-связям с партнерами агентства. Интересная история из жизни.
-                    </div>
-                </div>
-                <div class="schedule__item">
-                    <div class="schedule__item-title">Андей Иванов</div>
-                    <div class="schedule__item-time">24 сентября • 14:30</div>
-                    <div class="schedule__item-description">
-                        Исполнительный директор по вторичному рынку. Самые необычные сделки для агента, опыт продажи объектов недвижимости.
-                    </div>
-                </div>
-                <div class="schedule__item">
-                    <div class="schedule__item-title">Дмитрий Петров</div>
-                    <div class="schedule__item-time">24 сентября • 16:30</div>
-                    <div class="schedule__item-description">
-                        Бизнес-тренер по саморазвитию, расскажет как показать себя и наладить отношения с партнерами по бизнесу.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     
-    <div class="cut-plane schedule__cut-plane">
-        <div class="cut-plane__left"></div>
-        <div class="cut-plane__icon">
-            <a role="button" id="schedule-toggler">
-                <svg class="icon -plane -rotate-90">
-                    <use xlink:href="#icon-plane"></use>
-                </svg>
-            </a>
+            <!-- Hidden content -->
+            <div class="schedule__collapsed">
+                <div class="schedule__items">
+                    <div class="schedule__item">
+                        <div class="schedule__item-title">Иван Сергеев</div>
+                        <div class="schedule__item-time">23 сентября • 10:30</div>
+                        <div class="schedule__item-description">
+                            Агент по продажам коммерческой недвижимости со стажем более 10 лет. Раскроет вам некоторые секреты успешных продаж крупных объектов.
+                        </div>
+                    </div>
+                    <div class="schedule__item">
+                        <div class="schedule__item-title">Михаил Андреев</div>
+                        <div class="schedule__item-time">23 сентября • 12:30</div>
+                        <div class="schedule__item-description">
+                            Заместитель генерального директора по международным бизнес-связям с партнерами агентства. Интересная история из жизни.
+                        </div>
+                    </div>
+                    <div class="schedule__item">
+                        <div class="schedule__item-title">Андей Иванов</div>
+                        <div class="schedule__item-time">23 сентября • 14:30</div>
+                        <div class="schedule__item-description">
+                            Исполнительный директор по вторичному рынку. Самые необычные сделки для агента, опыт продажи объектов недвижимости.
+                        </div>
+                    </div>
+                    <div class="schedule__item">
+                        <div class="schedule__item-title">Дмитрий Петров</div>
+                        <div class="schedule__item-time">23 сентября • 16:30</div>
+                        <div class="schedule__item-description">
+                            Бизнес-тренер по саморазвитию, расскажет как показать себя и наладить отношения с партнерами по бизнесу.
+                        </div>
+                    </div>
+                </div>
+                <div class="section__header schedule__header">
+                    <span>День 2</span>
+                </div>
+                <div class="schedule__items">
+                    <div class="schedule__item">
+                        <div class="schedule__item-title">Иван Сергеев</div>
+                        <div class="schedule__item-time">24 сентября • 10:30</div>
+                        <div class="schedule__item-description">
+                            Агент по продажам коммерческой недвижимости со стажем более 10 лет. Раскроет вам некоторые секреты успешных продаж крупных объектов.
+                        </div>
+                    </div>
+                    <div class="schedule__item">
+                        <div class="schedule__item-title">Михаил Андреев</div>
+                        <div class="schedule__item-time">24 сентября • 12:30</div>
+                        <div class="schedule__item-description">
+                            Заместитель генерального директора по международным бизнес-связям с партнерами агентства. Интересная история из жизни.
+                        </div>
+                    </div>
+                    <div class="schedule__item">
+                        <div class="schedule__item-title">Андей Иванов</div>
+                        <div class="schedule__item-time">24 сентября • 14:30</div>
+                        <div class="schedule__item-description">
+                            Исполнительный директор по вторичному рынку. Самые необычные сделки для агента, опыт продажи объектов недвижимости.
+                        </div>
+                    </div>
+                    <div class="schedule__item">
+                        <div class="schedule__item-title">Дмитрий Петров</div>
+                        <div class="schedule__item-time">24 сентября • 16:30</div>
+                        <div class="schedule__item-description">
+                            Бизнес-тренер по саморазвитию, расскажет как показать себя и наладить отношения с партнерами по бизнесу.
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="cut-plane__right"></div>
-    </div>
-    
-</section>
-
-
-
-<!-- Ticket -->
-
-<section class="ticket" id="buy">
-    <div class="container">
-        <div class="ticket__title">
-            Купить билет
-        </div>
-        <div class="boarding">
-            <div class="boarding__big">
-                <div class="boarding__big__header">
-                    <svg class="icon -plane">
+        <div class="cut-plane schedule__cut-plane">
+            <div class="cut-plane__left"></div>
+            <div class="cut-plane__icon">
+                <a role="button" id="schedule-toggler">
+                    <svg class="icon -plane -rotate-90">
                         <use xlink:href="#icon-plane"></use>
-                    </svg><span class="_pl">Бизнес класс</span>
-
-                </div>
-                <div class="boarding__big__form-area">
-                    <img src="img/code.jpg" alt="code">
-                    <form class="boarding__big__form-area__form">
-                        <div class="boarding__big__form-area__form__item">
-                            <label for="where">Куда</label>
-                            <input type="text" id="where" name="where" value="Бизнес-тур «Бизнес класс»" disabled class="input" style="border: none">
-                        </div>
-                        <div class="boarding__big__form-area__form__item">
-                            <label for="fname">Имя</label>
-                            <input type="text" id="fname" name="fname" class="input" required>
-                        </div>
-                        <div class="boarding__big__form-area__form__item">
-                            <label for="lname">Фамилия</label>
-                            <input type="text" id="lname" name="lname" class="input" required>
-                        </div>
-                        <div class="boarding__big__form-area__form__item">
-                            <label for="tel">Телефон</label>
-                            <input type="tel" id="tel" name="tel" class="input" required>
-                        </div>
-                        <div class="boarding__big__form-area__form__item">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" class="input" required>
-                        </div>
-                        <div class="boarding__big__form-area__form__item _date">
-                            <label for="date1">Дата</label>
-                            <svg class="icon -plane -blue plane1">
-                                <use xlink:href="#icon-plane"></use>
-                            </svg>
-                            <input type="text" id="date1" name="date" value="13.11.20" disabled class="small" style="border: none">
-                            <svg class="icon -plane -blue plane2">
-                                <use xlink:href="#icon-plane"></use>
-                            </svg>
-                            <input type="text" id="date2" name="date" value="15.11.20" disabled class="small" style="border: none">
-                            <input type="button" value="Зарегистрироваться" class="submit" data-modal="modal-done">
-                        </div>
-                        <div class="confidential" id="price">
-                            <label for="checkbox">Даю согласие на обработку персональных данных (<a href="https://www.ayax.ru/upload/iblock/d89/d89ea6cb3b664beb7ba0ac2b61f4072c.pdf" target="_blank">Политика Конфиденциальности</a>)</label>
-                            <input type="checkbox" id="checkbox" name="checkbox" required checked>
-                        </div>
-
-                    </form>
-                    <img class="barcode" src="img/code-small-thin.jpg" alt="code">
-                </div>
-            </div>
-            <div class="boarding__small">
-                <div class="boarding__small__header">
-                    <div class="boarding__small__header__content">
-                        <div><img src="img/logo.png" alt="Аякс"></div>
-                        <div>Департамент
-                            <br>коммерческой недвижимости</div>
-                    </div>
-                </div>
-                <div class="boarding__small__form-area">
-                    <div class="boarding__small__form-area__title">
-                        Бизнес-тур «Бизнес класс»
-                    </div>
-                    <form class="boarding__small__form-area__form">
-                        <label for="fname-small">Имя</label>
-                        <br>
-                        <input type="text" id="fname-small" name="fname-small" disabled>
-                        <br>
-                        <label for="lname-small">Фамилия</label>
-                        <br>
-                        <input type="text" id="lname-small" name="lname-small" disabled>
-                        <br>
-                        <label for="tel-small">Телефон</label>
-                        <br>
-                        <input type="tel" id="tel-small" name="tel-small" disabled>
-                        <br>
-                        <label for="email-small">Email</label>
-                        <br>
-                        <input type="email" id="email-small" name="email-small" disabled>
-                        <input type="submit" value="Зарегистрироваться" class="submit">
-                        <br>
-                    </form>
-                    <img src="img/code-small-thin.jpg" alt="code">
-                </div>
-            </div>
-        </div>
-        <p class="price">Цена билета для одного участника: 100 000 руб.</p>
-    </div>
-</section>
-
-<!-- Map -->
-<section class="map">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2818.9805193973084!2d38.972848115882414!3d45.045617179098365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40f04f786b47b095%3A0xc296a61def6cb294!2zVWxpdHNhIFJhc2hwaWxldnNrYXlhLCAxNzkg0LrQvtGA0L_Rg9GBIDEsIEtyYXNub2RhciwgS3Jhc25vZGFyc2tpeSBrcmF5LCBSdXNzaWEsIDM1MDAyMA!5e0!3m2!1sen!2suk!4v1601219683854!5m2!1sen!2suk" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-</section>
-
-<!-- Footer -->
-
-<footer class="footer">
-    <div class="container">
-        <div class="footer__title">
-            Контакты
-        </div>
-        <div class="footer__name">
-            Департамент <br> коммерческой недвижимости
-        </div>
-        <div class="footer__address">
-            г. Краснодар, ул. Рашпилевская 179/1, 8 этаж
-        </div>
-        <div class="footer__details">
-            Горячко Дарья
-            <br>
-            <a href="tel:+79886661294" class="tel">8 988 666 12 94</a>
-            <br>
-            komm@ayax.ru
-        </div>
-        <div class="footer__bottom">
-            <div class="footer__bottom__social">
-                <a href="https://instagram.com/dkn.ayax" target="_blank">
-                    <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" class="svg-inline--fa fa-instagram fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>
-                </a>
-                <a href="https://www.youtube.com/channel/UC6fqtWhE2ge7zpQ3ic-FULg" target="_blank">
-                    <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="youtube" class="svg-inline--fa fa-youtube fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg>
+                    </svg>
                 </a>
             </div>
-            <div class="footer__bottom__logo">
-                <div><img src="img/logo.png" alt="Аякс"></div>
+            <div class="cut-plane__right"></div>
+        </div>
+    </section>
+    
+    
+    <!-- Ticket -->
+    <section class="ticket" id="buy">
+        <div class="container">
+            <div class="ticket__title">
+                Купить билет
+            </div>
+            <div class="boarding">
+                <div class="boarding__big">
+                    <div class="boarding__big__header">
+                        <svg class="icon -plane"><use xlink:href="#icon-plane"></use></svg>
+                        <span class="_pl">Бизнес класс</span>
+                    </div>
+                    <div class="boarding__big__form-area">
+                        <img src="img/code.jpg" alt="code">
+                        <form id="form-registration" class="boarding__big__form-area__form">
+                            <div class="boarding__big__form-area__form__item">
+                                <label for="where">Куда</label>
+                                <input type="text" id="where" name="where" value="Бизнес-тур «Бизнес класс»" disabled class="input" style="border: none">
+                            </div>
+                            <div class="boarding__big__form-area__form__item">
+                                <label for="fname">Имя</label>
+                                <input type="text" id="fname" name="fname" class="input" required>
+                            </div>
+                            <div class="boarding__big__form-area__form__item">
+                                <label for="lname">Фамилия</label>
+                                <input type="text" id="lname" name="lname" class="input" required>
+                            </div>
+                            <div class="boarding__big__form-area__form__item">
+                                <label for="tel">Телефон</label>
+                                <input type="tel" id="tel" name="tel" class="input" required>
+                            </div>
+                            <div class="boarding__big__form-area__form__item">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" class="input" required>
+                            </div>
+                            <div class="boarding__big__form-area__form__item _date">
+                                <label for="date1">Дата</label>
+                                <svg class="icon -plane -blue plane1">
+                                    <use xlink:href="#icon-plane"></use>
+                                </svg>
+                                <input type="text" id="date1" name="date" value="13.11.20" disabled class="small" style="border: none">
+                                <svg class="icon -plane -blue plane2">
+                                    <use xlink:href="#icon-plane"></use>
+                                </svg>
+                                <input type="text" id="date2" name="date" value="15.11.20" disabled class="small" style="border: none">
+                                <input type="button" value="Зарегистрироваться" class="submit" data-modal="modal-done">
+                            </div>
+                            <div class="confidential" id="price">
+                                <label for="checkbox">Даю согласие на обработку персональных данных (<a href="https://www.ayax.ru/upload/iblock/d89/d89ea6cb3b664beb7ba0ac2b61f4072c.pdf" target="_blank">Политика Конфиденциальности</a>)</label>
+                                <input type="checkbox" id="checkbox" name="checkbox" required checked>
+                            </div>
+                        </form>
+                        <img class="barcode" src="img/code-small-thin.jpg" alt="code">
+                    </div>
+                </div>
+                <div class="boarding__small">
+                    <div class="boarding__small__header">
+                        <div class="boarding__small__header__content">
+                            <div><img src="img/logo.png" alt="Аякс"></div>
+                            <div>Департамент<br>коммерческой недвижимости</div>
+                        </div>
+                    </div>
+                    <div class="boarding__small__form-area">
+                        <div class="boarding__small__form-area__title">
+                            Бизнес-тур «Бизнес класс»
+                        </div>
+                        <form class="boarding__small__form-area__form">
+                            <label for="fname-small">Имя</label><br>
+                            <input type="text" id="fname-small" name="fname-small" disabled><br>
+                            <label for="lname-small">Фамилия</label><br>
+                            <input type="text" id="lname-small" name="lname-small" disabled><br>
+                            <label for="tel-small">Телефон</label><br>
+                            <input type="tel" id="tel-small" name="tel-small" disabled><br>
+                            <label for="email-small">Email</label><br>
+                            <input type="email" id="email-small" name="email-small" disabled>
+                            <input type="submit" value="Зарегистрироваться" class="submit">
+                        </form>
+                        <img src="img/code-small-thin.jpg" alt="code">
+                    </div>
+                </div>
+            </div>
+            <p class="price">Цена билета для одного участника: 100 000 руб.</p>
+        </div>
+    </section>
+    
+    
+    <!-- Map -->
+    <section class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2818.9805193973084!2d38.972848115882414!3d45.045617179098365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40f04f786b47b095%3A0xc296a61def6cb294!2zVWxpdHNhIFJhc2hwaWxldnNrYXlhLCAxNzkg0LrQvtGA0L_Rg9GBIDEsIEtyYXNub2RhciwgS3Jhc25vZGFyc2tpeSBrcmF5LCBSdXNzaWEsIDM1MDAyMA!5e0!3m2!1sen!2suk!4v1601219683854!5m2!1sen!2suk" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </section>
+    
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__title">Контакты</div>
+            <div class="footer__name">Департамент <br> коммерческой недвижимости</div>
+            <div class="footer__address">г. Краснодар, ул. Рашпилевская 179/1, 8 этаж</div>
+            <div class="footer__details">
+                Горячко Дарья<br>
+                <a href="tel:+79886661294" class="tel">+7 988 666-12-94</a><br>
+                komm@ayax.ru
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__social">
+                    <a href="https://instagram.com/dkn.ayax" target="_blank">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" class="svg-inline--fa fa-instagram fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UC6fqtWhE2ge7zpQ3ic-FULg" target="_blank">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="youtube" class="svg-inline--fa fa-youtube fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg>
+                    </a>
+                </div>
+                <div class="footer__logo">
+                    <div><img src="img/logo.png" alt="Аякс"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <div id="modal-done" class="modal-content effect-up">
+        <div class="modal-done">
+            <div class="modal-done__header">Ваша заявка отправлена!</div>
+            <div class="modal-done__text">
+                <p>Спасибо за регистрацию.</p>
+                <p>Мы свяжемся с вами в ближайшее время.</p>
             </div>
         </div>
     </div>
-</footer>
-
-<div id="modal-done" class="modal-content effect-up">
-    <div class="modal-done">
-        <div class="modal-done__header">Ваша заявка отправлена!</div>
-        <div class="modal-done__text">
-            <p>Спасибо за регистрацию.</p>
-            <p>Мы свяжемся с вами в ближайшее время.</p>
-        </div>
-    </div>
-</div>
-
-<script src="js/base.js"></script>
-<!-- <script src="js/jquery-3.5.1.min.js"></script> -->
-<script src="js/script.js"></script>
+    
+    <script src="js/base.js"></script>
+    <script src="js/script.js"></script>
+    
 </body>
 </html>

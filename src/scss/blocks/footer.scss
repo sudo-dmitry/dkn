@@ -31,33 +31,33 @@
     @media (max-width: $screen-small) {
       flex-direction: column;
     }
+  }
+  
+  &__logo {
 
-    &__logo {
-
-      img {
-        width: 150px;
-        @media (max-width: $screen-small) {
-          padding-top: 30px;
-        }
+    img {
+      width: 150px;
+      @media (max-width: $screen-small) {
+        padding-top: 30px;
       }
     }
+  }
 
-    &__social {
-      display: flex;
-      width: 100px;
-      justify-content: space-between;
-      line-height: 2.8;
+  &__social {
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+    line-height: 2.8;
 
-      @media (max-width: $screen-small) {
-        margin: inherit;
-        margin-bottom: 20px;
-      }
+    @media (max-width: $screen-small) {
+      margin: inherit;
+      margin-bottom: 20px;
+    }
 
-      a {
-        width: 40px;
-        height: 40px;
-        color: $colorWhite;
-      }
+    a {
+      width: 40px;
+      height: 40px;
+      color: $colorWhite;
     }
   }
 }

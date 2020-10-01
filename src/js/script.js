@@ -86,7 +86,7 @@
 // Burger Menu
 
 const burger = document.getElementById('burger');
-const items = document.querySelectorAll('.js-item');
+const items = document.querySelectorAll('.js-burger-item');
 for (const item of items) {
   item.onclick = () => {
     burger.checked = false;
