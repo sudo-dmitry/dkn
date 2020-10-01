@@ -4,15 +4,18 @@
 (function () {
 
   let speakers = document.querySelector('.speakers');
+  let speakersContainer = document.querySelector('.speakers .container');
   let speakersCollapsed = document.querySelector('.speakers__collapsed');
   let speakersCollapsedHeight = 0;
   let toggler = document.getElementById('speakers-toggler');
   let isExpanded = false;
-
-  // Check speakers collapsed part height
-  speakersCollapsed.classList.add('check');
+  
+  // Check collapsed part height
+  speakersCollapsed.style.width = speakersCollapsed.clientWidth + 'px';
+  speakersCollapsed.classList.add('check');  
   speakersCollapsedHeight = speakersCollapsed.clientHeight;
   speakersCollapsed.classList.remove('check');
+  speakersCollapsed.style.width = 'auto';
 
   toggler.addEventListener('click', function () {
     isExpanded = speakers.classList.contains('expanded');
@@ -36,11 +39,13 @@
   let scheduleCollapsedHeight = 0;
   let toggler = document.getElementById('schedule-toggler');
   let isExpanded = false;
-
-  // Check schedule collapsed part height
-  scheduleCollapsed.classList.add('check');
+  
+  // Check collapsed part height
+  scheduleCollapsed.style.width = scheduleCollapsed.clientWidth + 'px';
+  scheduleCollapsed.classList.add('check');  
   scheduleCollapsedHeight = scheduleCollapsed.clientHeight;
   scheduleCollapsed.classList.remove('check');
+  scheduleCollapsed.style.width = 'auto';
 
   toggler.addEventListener('click', function () {
     isExpanded = schedule.classList.contains('expanded');
