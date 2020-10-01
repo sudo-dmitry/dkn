@@ -677,10 +677,11 @@ a {
               padding: 5px 10px;
               border: 1px solid #0A70B9;
               border-radius: 10px;
-              appearance: none; }
+              appearance: none !important; }
               @media (max-width: 720px) {
                 .ticket .boarding__big__form-area__form__item input {
-                  font-size: 16px; } }
+                  font-size: 16px;
+                  appearance: none !important; } }
             .ticket .boarding__big__form-area__form__item .input {
               width: 100%; }
             .ticket .boarding__big__form-area__form__item .plane1 {
@@ -702,17 +703,19 @@ a {
               padding: 5px 20px;
               transition: .3s;
               border-radius: 5px;
-              appearance: none; }
+              appearance: none !important; }
               .ticket .boarding__big__form-area__form__item .submit:hover {
                 background-color: #0961a1; }
               @media (max-width: 1080px) {
                 .ticket .boarding__big__form-area__form__item .submit {
                   font-size: 1.3rem;
                   padding: 10px 0;
-                  margin: 10px 0; } }
+                  margin: 10px 0;
+                  appearance: none !important; } }
               @media (max-width: 1080px) {
                 .ticket .boarding__big__form-area__form__item .submit {
-                  font-size: 1rem; } }
+                  font-size: 1rem;
+                  appearance: none !important; } }
           .ticket .boarding__big__form-area__form .confidential {
             margin-top: 10px;
             font-size: 14px;
@@ -853,6 +856,8 @@ a {
     font-weight: 900; }
   .footer__address {
     padding: 40px 0; }
+  .footer__ details {
+    color: #ffffff; }
   .footer__bottom {
     padding-top: 60px;
     display: flex;
