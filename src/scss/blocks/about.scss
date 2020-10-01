@@ -83,25 +83,11 @@
   
   .about__timeline {
     padding: 100px 0 160px 0;
+
+    @media (max-width: $screen-medium) {
+      padding: 40px 0 40px 0;
+    }
   }
-  
-  // &__plane {
-  //   box-sizing: content-box;
-  //   width: 40px;
-  //   padding-left: 80%;
-  //   animation: 1.5s ease-out 0s 1 slideInFromLeft;
-  //   position: relative;
-  //   &:before {
-  //     content: '';
-  //     display: block;
-  //     position: absolute;
-  //     width: 97%;
-  //     height: 3px;
-  //     background-color: #ffffff;
-  //     top: 39%;
-  //     right: 3%;
-  //   }
-  // }
 }
 
 .timeline {
@@ -112,7 +98,7 @@
   @media (max-width: $screen-medium) {
     flex-direction: column;
     margin-left: 20px;
-    padding: 40px 0 40px 0;
+    //padding: 40px 0 40px 0;
   }
 
   .timeline__item {

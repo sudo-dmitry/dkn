@@ -57,6 +57,13 @@
 
       img {
         width: 150px;
+        @media (max-width: $screen-small) {
+          width: 300px;
+        }
+      }
+
+      &__name {
+        padding-left: 20px;
       }
     }
 
