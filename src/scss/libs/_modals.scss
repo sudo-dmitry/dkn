@@ -1,0 +1,37 @@
+// Colors
+$color-white: #fff;
+$color-blue: #0a70b9;
+
+
+.modal-done {
+	padding: 20px;
+	
+	@media (max-width: $screen-small) {
+		padding: 0;
+	}
+	
+	.modal-done__header {
+		font-size: 1.8rem;
+		font-weight: 900;
+		color: $color-blue;
+	}
+	.modal-done__text {
+		margin-top: 20px;
+		color: $color-blue;
+		
+		p {
+			margin: .6rem 0;
+		}
+	}
+}
+
+
+.modal-text {
+	font-size: .7rem;
+	color: #000;
+	
+	p {
+		margin: .8rem;
+		line-height: 1.6;
+	}
+}
