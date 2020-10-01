@@ -168,7 +168,8 @@
               padding: 5px 20px;
               transition: .3s;
               border-radius: 5px;
-              appearance: none !important;
+              -webkit-appearance: none;
+              -moz-appearance: none;
               &:hover {
                 background-color: darken($mainColor, 5%);
               }
@@ -176,11 +177,9 @@
                 font-size: 1.3rem;
                 padding: 10px 0;
                 margin: 10px 0;
-                appearance: none !important;
               }
               @media (max-width: $screen-medium) {
                 font-size: 1rem;
-                appearance: none !important;
               }
             }
           }
