@@ -6,8 +6,12 @@
     font-weight: 900;
   }
 
+  &__name {
+    padding: 30px 0;
+  }
+
   &__address {
-    padding: 40px 0;
+    padding-bottom: 30px;
   }
 
   &__details {
@@ -20,58 +24,28 @@
   }
 
   &__bottom {
-    padding-top: 60px;
+    padding-top: 40px;
     display: flex;
     justify-content: space-between;
 
     @media (max-width: $screen-small) {
-      flex-direction: column-reverse;
+      flex-direction: column;
     }
 
-    &__name {
-
-      @media (max-width: $screen-small) {
-        font-size: .8rem;
-        text-align: end;
-      }
-    }
-
-    &__left {
-      display: flex;
-      width: 45%;
-      justify-content: space-between;
-
-      @media (max-width: $screen-small) {
-        width: 100%;
-      }
-
-      &>div {
-        margin: auto 0;
-        @media (max-width: $screen-medium) {
-          margin-left: 30px;
-        }
-        @media (max-width: $screen-small) {
-          margin: auto 0;
-        }
-      }
+    &__logo {
 
       img {
         width: 150px;
         @media (max-width: $screen-small) {
-          width: 300px;
+          padding-top: 30px;
         }
-      }
-
-      &__name {
-        padding-left: 20px;
       }
     }
 
-    &_right {
+    &__social {
       display: flex;
       width: 100px;
       justify-content: space-between;
-      margin: auto;
       line-height: 2.8;
 
       @media (max-width: $screen-small) {
